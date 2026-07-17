@@ -40,7 +40,8 @@ data class EndGameSnapshot(
     val isColorPhase: Boolean = false,
     val playerIndex: Int = 0,
     val freeBallActive: Boolean = false,
-    val redOffset: Int = 0
+    val redOffset: Int = 0,
+    val colorsPotted: Set<String> = emptySet()
 )
 
 sealed class UndoAction {
@@ -58,3 +59,23 @@ sealed class UndoAction {
         val snapshot: EndGameSnapshot
     ) : UndoAction()
 }
+
+// Match Record
+data class MatchRecord(
+    val id: String = java.util.UUID.randomUUID().toString(),
+    val date: Long = System.currentTimeMillis(),
+    val duration: Long = 0,
+    val players: List<PlayerSnapshot> = emptyList(),
+    val winnerName: String = "",
+    val events: List<ScoreEvent> = emptyList(),
+    val notes: String = ""
+) {
+    val bestBreak: Int get() = players.maxOfOrNull { it.highestBreak } ?: 0
+}
+
+data class PlayerSnapshot(
+    val name: String,
+    val score: Int,
+    val highestBreak: Int,
+    val colorIndex: Int
+)

@@ -24,6 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
+import com.pakertong.snooker.model.LocalizationManager
 import com.pakertong.snooker.model.SnookerBall
 import com.pakertong.snooker.viewmodel.GameViewModel
 
@@ -33,6 +34,7 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
     var showFoulSheet by remember { mutableStateOf(false) }
     var showRedCountMenu by remember { mutableStateOf(false) }
     var showEndConfirm by remember { mutableStateOf(false) }
+    var showResetConfirm by remember { mutableStateOf(false) }
 
     Scaffold(
         containerColor = Color(0xFF1a1a2e),
@@ -41,7 +43,7 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
                 title = { Text(formatTime(vm.matchStartTime), color = Color.White.copy(alpha = 0.7f)) },
                 colors = TopAppBarDefaults.topAppBarColors(containerColor = Color(0xFF0f0f23)),
                 actions = {
-                    IconButton(onClick = { vm.resetGame() }) {
+                    IconButton(onClick = { showResetConfirm = true }) {
                         Icon(Icons.Default.Refresh, contentDescription = null,
                             tint = Color.White.copy(alpha = if (vm.isGameActive) 0.6f else 0.2f))
                     }
@@ -57,8 +59,9 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
             ) {
                 items(vm.sortedPlayers) { player ->
                     val isCurrent = player.id == vm.currentPlayer.id
+                    val topScore = vm.sortedPlayers.firstOrNull()?.score ?: 0
                     PlayerCard(player = player, isCurrent = isCurrent,
-                        rank = vm.sortedPlayers.indexOf(player) + 1)
+                        rank = vm.sortedPlayers.indexOf(player) + 1, topScore = topScore)
                 }
             }
 
@@ -69,19 +72,19 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
             ) {
                 Row(horizontalArrangement = Arrangement.Center,
                     modifier = Modifier.fillMaxWidth()) {
-                    InfoChip("Reds", "${vm.redsRemaining}", Color(0xFFFF4500))
+                    InfoChip(LocalizationManager.str("sb.reds"), "${vm.redsRemaining}", Color(0xFFFF4500))
                     Spacer(modifier = Modifier.width(12.dp))
-                    InfoChip("Table", "${vm.tableRemaining}", Color(0xFFFFD700))
+                    InfoChip(LocalizationManager.str("sb.table"), "${vm.tableRemaining}", Color(0xFFFFD700))
                 }
                 Spacer(modifier = Modifier.height(8.dp))
 
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Box(modifier = Modifier.size(10.dp).clip(CircleShape).background(Color(vm.currentPlayer.color)))
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text("${vm.currentPlayer.name}'s turn", color = Color(vm.currentPlayer.color), fontWeight = FontWeight.SemiBold)
+                    Text("${vm.currentPlayer.name} ${LocalizationManager.str("sb.shooting")}", color = Color(vm.currentPlayer.color), fontWeight = FontWeight.SemiBold)
                     if (vm.isFreeBallActive) {
                         Spacer(modifier = Modifier.width(8.dp))
-                        Text("Free Ball!", color = Color.Green, fontWeight = FontWeight.Bold, fontSize = 12.sp,
+                        Text(LocalizationManager.str("sb.freeBall"), color = Color.Green, fontWeight = FontWeight.Bold, fontSize = 12.sp,
                             modifier = Modifier.clip(RoundedCornerShape(12.dp)).background(Color.Green.copy(alpha = 0.2f)).padding(horizontal = 8.dp, vertical = 2.dp))
                     }
                 }
@@ -91,12 +94,17 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
                 Spacer(modifier = Modifier.height(12.dp))
 
                 Row(horizontalArrangement = Arrangement.SpaceEvenly, modifier = Modifier.fillMaxWidth()) {
-                    BottomChip("Undo", Icons.Default.Undo, Color.White.copy(alpha = 0.7f), vm.hasUndo) { vm.undo() }
-                    BottomChip("Foul", Icons.Default.WarningAmber, Color(0xFFFF9800), true) { showFoulSheet = true }
-                    BottomChip("End", Icons.Default.Flag, Color.White.copy(alpha = 0.6f), true) { showEndConfirm = true }
+                    BottomChip(LocalizationManager.str("sb.undo"), Icons.Default.Undo, Color.White.copy(alpha = 0.7f), vm.hasUndo) { vm.undo() }
+                    BottomChip(LocalizationManager.str("sb.foul"), Icons.Default.WarningAmber, Color(0xFFFF9800), true) { showFoulSheet = true }
+                    BottomChip(LocalizationManager.str("sb.end"), Icons.Default.Flag, Color.White.copy(alpha = 0.6f), true) { showEndConfirm = true }
                 }
             }
         }
+    }
+
+    // Auto end match when table remaining = 0 (not tied) or re-spot black potted
+    LaunchedEffect(vm.matchOver) {
+        if (vm.matchOver) showEndConfirm = true
     }
 
     if (showFoulSheet) {
@@ -106,7 +114,7 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
         Dialog(onDismissRequest = { showRedCountMenu = false }) {
             Card(colors = CardDefaults.cardColors(containerColor = Color(0xFF16213e))) {
                 Column(modifier = Modifier.padding(24.dp)) {
-                    Text("Red Ball x ?", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 18.sp)
+                    Text(LocalizationManager.str("redCount.title"), color = Color.White, fontWeight = FontWeight.Bold, fontSize = 18.sp)
                     Spacer(modifier = Modifier.height(12.dp))
                     (2..5).forEach { count ->
                         TextButton(onClick = { showRedCountMenu = false; vm.scoreMultipleReds(count) }, modifier = Modifier.fillMaxWidth()) {
@@ -114,29 +122,104 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
                         }
                     }
                     TextButton(onClick = { showRedCountMenu = false }, modifier = Modifier.align(Alignment.End)) {
-                        Text("Cancel", color = Color.White.copy(alpha = 0.6f))
+                        Text(LocalizationManager.str("redCount.cancel"), color = Color.White.copy(alpha = 0.6f))
                     }
                 }
             }
         }
     }
-    if (showEndConfirm) {
+    if (showResetConfirm) {
         AlertDialog(
-            onDismissRequest = { showEndConfirm = false },
-            title = { Text("End Match?", color = Color.White) },
-            text = { Text("Saved to history", color = Color.White.copy(alpha = 0.7f)) },
+            onDismissRequest = { showResetConfirm = false },
+            title = { Text("Reset scores?", color = Color.White) },
+            text = { Text("All scores will be cleared", color = Color.White.copy(alpha = 0.7f)) },
             confirmButton = {
-                TextButton(onClick = { showEndConfirm = false; onEndMatch() }) {
-                    Text("Save & End", color = Color(0xFFFF4500))
+                TextButton(onClick = { showResetConfirm = false; vm.resetGame() }) {
+                    Text("Reset", color = Color(0xFFFF4500))
                 }
             },
             dismissButton = {
-                TextButton(onClick = { showEndConfirm = false }) {
-                    Text("Continue", color = Color.White.copy(alpha = 0.6f))
+                TextButton(onClick = { showResetConfirm = false }) {
+                    Text("Cancel", color = Color.White.copy(alpha = 0.6f))
                 }
             },
             containerColor = Color(0xFF16213e)
         )
+    }
+    if (showEndConfirm) {
+        AlertDialog(
+            onDismissRequest = { showEndConfirm = false },
+            title = { Text(LocalizationManager.str("sb.endTitle"), color = Color.White) },
+            text = {
+                val sorted = vm.sortedPlayers
+                val winner = sorted.firstOrNull()
+                Column {
+                    if (winner != null) {
+                        val isDraw = sorted.size >= 2 && sorted.first().score == sorted.last().score
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(Icons.Default.EmojiEvents, contentDescription = null,
+                                tint = Color(0xFFFFD700), modifier = Modifier.size(20.dp))
+                            Spacer(modifier = Modifier.width(6.dp))
+                            if (isDraw) {
+                                Text("Draw!",
+                                    color = Color(0xFFFFD700), fontWeight = FontWeight.Bold, fontSize = 16.sp)
+                            } else {
+                                Text("${winner.name} wins!",
+                                    color = Color(0xFFFFD700), fontWeight = FontWeight.Bold, fontSize = 16.sp)
+                            }
+                        }
+                        Spacer(modifier = Modifier.height(8.dp))
+                    }
+                    sorted.forEach { p ->
+                        Row(horizontalArrangement = Arrangement.SpaceBetween,
+                            modifier = Modifier.fillMaxWidth()) {
+                            Text(p.name, color = Color.White)
+                            Text("${p.score}", color = Color(0xFFFF4500), fontWeight = FontWeight.Bold)
+                        }
+                        Spacer(modifier = Modifier.height(2.dp))
+                    }
+                    val maxBreak = sorted.maxOfOrNull { it.highestBreak } ?: 0
+                    if (maxBreak >= 147) {
+                        Spacer(modifier = Modifier.height(4.dp))
+                        Text(LocalizationManager.str("sb.maxBreak"),
+                            color = Color(0xFFFF4500), fontWeight = FontWeight.Bold, fontSize = 14.sp)
+                    }
+                    Text(LocalizationManager.str("sb.endMsg"),
+                        color = Color.White.copy(alpha = 0.5f), fontSize = 12.sp)
+                }
+            },
+            confirmButton = {
+                TextButton(onClick = { showEndConfirm = false; onEndMatch() }) {
+                    Text(LocalizationManager.str("sb.saveEnd"), color = Color(0xFFFF4500))
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showEndConfirm = false }) {
+                    Text(LocalizationManager.str("sb.continue"), color = Color.White.copy(alpha = 0.6f))
+                }
+            },
+            containerColor = Color(0xFF16213e)
+        )
+    }
+    if (vm.showReSpotDialog) {
+        Dialog(onDismissRequest = { }) {
+            Card(colors = CardDefaults.cardColors(containerColor = Color(0xFF16213e))) {
+                Column(modifier = Modifier.padding(24.dp)) {
+                    Text(LocalizationManager.str("respot.title"), color = Color.White, fontWeight = FontWeight.Bold, fontSize = 20.sp)
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Text(LocalizationManager.str("respot.msg"),
+                        color = Color.White.copy(alpha = 0.7f), fontSize = 14.sp)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    vm.players.forEachIndexed { i, p ->
+                        Button(
+                            onClick = { vm.startReSpotBlack(i) },
+                            colors = ButtonDefaults.buttonColors(containerColor = Color(p.color)),
+                            modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)
+                        ) { Text(p.name, color = Color.White, fontWeight = FontWeight.SemiBold) }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -162,7 +245,7 @@ fun BallButtonRow(vm: GameViewModel, onLongPressRed: () -> Unit) {
                 modifier = Modifier.weight(1f).height(60.dp)) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Icon(Icons.Default.Close, contentDescription = null, tint = Color.White, modifier = Modifier.size(16.dp))
-                    Text("Miss", fontSize = 10.sp, color = Color.White, fontWeight = FontWeight.SemiBold)
+                    Text(LocalizationManager.str("sb.miss"), fontSize = 10.sp, color = Color.White, fontWeight = FontWeight.SemiBold)
                 }
             }
         }
@@ -187,7 +270,7 @@ fun RowScope.RedBallBtn(disabled: Boolean, onClick: () -> Unit, onLongClick: () 
                 contentAlignment = Alignment.Center) {
                 Text("1", fontSize = 10.sp, color = Color.White, fontWeight = FontWeight.Bold)
             }
-            Text("Red", fontSize = 10.sp,
+            Text(LocalizationManager.str("ball.red"), fontSize = 10.sp,
                 color = if (disabled) Color.White.copy(alpha = 0.2f) else Color.White)
         }
     }
@@ -218,7 +301,7 @@ fun RowScope.BallBtn(ball: SnookerBall, disabled: Boolean, onClick: () -> Unit) 
 }
 
 @Composable
-fun PlayerCard(player: com.pakertong.snooker.model.Player, isCurrent: Boolean, rank: Int) {
+fun PlayerCard(player: com.pakertong.snooker.model.Player, isCurrent: Boolean, rank: Int, topScore: Int = 0) {
     Card(
         colors = CardDefaults.cardColors(
             containerColor = if (isCurrent) Color(player.color).copy(alpha = 0.15f) else Color.White.copy(alpha = 0.04f)
@@ -233,8 +316,15 @@ fun PlayerCard(player: com.pakertong.snooker.model.Player, isCurrent: Boolean, r
             Spacer(modifier = Modifier.width(16.dp))
             Column(modifier = Modifier.weight(1f)) {
                 Text(player.name, fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = Color.White)
-                if (player.highestBreak > 0)
-                    Text("Highest Break: ${player.highestBreak}", color = Color.White.copy(alpha = 0.4f), fontSize = 11.sp)
+                Row {
+                    if (player.highestBreak > 0)
+                        Text("Highest Break: ${player.highestBreak}", color = Color.White.copy(alpha = 0.4f), fontSize = 11.sp)
+                    if (topScore > player.score) {
+                        Spacer(modifier = Modifier.width(8.dp))
+                        Text("${LocalizationManager.str("sb.behind")}: ${topScore - player.score}${LocalizationManager.str("sb.behindPts")}",
+                            color = Color(0xFFFF4500).copy(alpha = 0.6f), fontSize = 11.sp)
+                    }
+                }
             }
             Text("${player.score}", fontSize = 32.sp, fontWeight = FontWeight.Bold, color = Color(player.color))
         }
