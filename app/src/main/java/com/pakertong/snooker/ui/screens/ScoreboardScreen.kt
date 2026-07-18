@@ -45,7 +45,7 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
             TopAppBar(
                 title = {
                     var now by remember { mutableStateOf(System.currentTimeMillis()) }
-                    LaunchedEffect(Unit) { while(true) { delay(1000); now = System.currentTimeMillis() } }
+                    LaunchedEffect(Unit) { while(true) { delay(1000); if (!vm.matchOver) now = System.currentTimeMillis() } }
                     val matchElapsed = formatTime(vm.matchStartTime, now)
                     val turnElapsed = ((now - vm.turnStartTime) / 1000).toInt()
                     Text("$matchElapsed · ${turnElapsed}s", color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f))
