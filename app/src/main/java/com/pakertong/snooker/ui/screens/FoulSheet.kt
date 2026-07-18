@@ -74,7 +74,7 @@ fun FoulTab(vm: GameViewModel, onDismiss: () -> Unit) {
 
     Column(
         modifier = Modifier
-            .heightIn(max = 500.dp)
+            .heightIn(max = 600.dp)
             .verticalScroll(rememberScrollState())
             .padding(16.dp)
     ) {
@@ -167,7 +167,7 @@ fun FoulTab(vm: GameViewModel, onDismiss: () -> Unit) {
 fun SpecialTab(vm: GameViewModel, onDismiss: () -> Unit) {
     Column(
         modifier = Modifier
-            .heightIn(max = 500.dp)
+            .heightIn(max = 600.dp)
             .verticalScroll(rememberScrollState())
             .padding(16.dp)
     ) {

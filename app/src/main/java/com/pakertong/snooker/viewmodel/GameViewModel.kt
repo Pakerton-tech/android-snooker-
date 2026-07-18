@@ -104,6 +104,10 @@ class GameViewModel : ViewModel() {
     // Match timer
     var matchStartTime by mutableStateOf(System.currentTimeMillis())
         private set
+    var turnStartTime by mutableStateOf(System.currentTimeMillis())
+        private set
+    var recentScorePlayerId by mutableStateOf<String?>(null)
+        private set
 
     // Tab tracking
     var currentTab by mutableIntStateOf(0)
@@ -119,6 +123,19 @@ class GameViewModel : ViewModel() {
         resetGame()
         redsRemaining = redCount
         initialRedCount = redCount
+    }
+
+    fun selectPlayer(playerId: String) {
+        val idx = players.indexOfFirst { it.id == playerId }
+        if (idx < 0 || idx == currentPlayerIdx) return
+        players[currentPlayerIdx] = players[currentPlayerIdx].copy(currentBreak = 0)
+        currentPlayerIdx = idx
+        turnStartTime = System.currentTimeMillis()
+        if (redsRemaining > 0) isColorPhase = false
+    }
+
+    fun clearRecentScore() {
+        recentScorePlayerId = null
     }
 
     fun resetGame() {
@@ -145,6 +162,7 @@ class GameViewModel : ViewModel() {
         val snap = captureSnapshot()
         val wasFreeBall = isFreeBallActive
         isFreeBallActive = false
+        recentScorePlayerId = players.getOrNull(currentPlayerIdx)?.id
 
         // Re-spot black: add score only, no break tracking, then end match
         if (isReSpotBlack && ball == SnookerBall.BLACK) {
@@ -163,7 +181,8 @@ class GameViewModel : ViewModel() {
 
         // Free ball: score as target ball value, not actual ball value
         val targetValue = if (wasFreeBall) {
-            if (isColorPhase) 4 else 1  // color target=4, red target=1
+            if (redsRemaining == 0 && endGamePhase >= 0) currentEndgameBall?.points ?: 2
+            else if (isColorPhase) 4 else 1
         } else {
             ball.points
         }
@@ -213,6 +232,7 @@ class GameViewModel : ViewModel() {
         val snap = captureSnapshot()
         isFreeBallActive = false
         isColorPhase = true
+        recentScorePlayerId = players.getOrNull(currentPlayerIdx)?.id
 
         val totalPoints = count * SnookerBall.RED.points
         val p = players[currentPlayerIdx]
@@ -235,6 +255,7 @@ class GameViewModel : ViewModel() {
     }
 
     fun missShot() {
+        val snap = captureSnapshot()
         // Reset current break and pass turn, no points change
         players[currentPlayerIdx] = players[currentPlayerIdx].copy(currentBreak = 0)
         isFreeBallActive = false
@@ -244,6 +265,7 @@ class GameViewModel : ViewModel() {
         if (redsRemaining == 0 && endGamePhase == -1) {
             endGamePhase = 0
         }
+        undoStack.add(UndoAction.Miss(snap))
         nextTurn()
         checkMatchEnd()
     }
@@ -325,6 +347,10 @@ class GameViewModel : ViewModel() {
                 restoreSnapshot(action.snapshot)
                 redsChange = action.redsChange
             }
+            is UndoAction.Miss -> {
+                currentPlayerIdx = action.snapshot.playerIndex
+                restoreSnapshot(action.snapshot)
+            }
         }
         if (redsChange != 0) {
             redsRemaining -= redsChange
@@ -334,6 +360,7 @@ class GameViewModel : ViewModel() {
     private fun nextTurn() {
         players[currentPlayerIdx] = players[currentPlayerIdx].copy(currentBreak = 0)
         currentPlayerIdx = (currentPlayerIdx + 1) % players.size
+        turnStartTime = System.currentTimeMillis()
     }
 
     private fun captureSnapshot() = EndGameSnapshot(
@@ -372,7 +399,13 @@ class GameViewModel : ViewModel() {
         // Re-spot black: only black is active
         if (isReSpotBlack) return ball != SnookerBall.BLACK
         // Free ball: all balls active
-        if (isFreeBallActive) return false
+        if (isFreeBallActive) {
+            if (redsRemaining == 0 && endGamePhase >= 0) {
+                val minBall = currentEndgameBall
+                return ball == SnookerBall.RED || (minBall != null && ball.points < minBall.points)
+            }
+            return false
+        }
         // Endgame: only current target color is active
         if (redsRemaining == 0 && endGamePhase >= 0) {
             return ball == SnookerBall.RED || ball != currentEndgameBall

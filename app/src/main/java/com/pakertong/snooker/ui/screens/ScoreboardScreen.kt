@@ -3,6 +3,7 @@ package com.pakertong.snooker.ui.screens
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -27,6 +28,7 @@ import androidx.compose.ui.window.DialogProperties
 import com.pakertong.snooker.model.LocalizationManager
 import com.pakertong.snooker.model.SnookerBall
 import com.pakertong.snooker.viewmodel.GameViewModel
+import kotlinx.coroutines.delay
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -37,11 +39,17 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
     var showResetConfirm by remember { mutableStateOf(false) }
 
     Scaffold(
-        containerColor = Color(0xFF1a1a2e),
+        containerColor = MaterialTheme.colorScheme.surface,
         topBar = {
             TopAppBar(
-                title = { Text(formatTime(vm.matchStartTime), color = Color.White.copy(alpha = 0.7f)) },
-                colors = TopAppBarDefaults.topAppBarColors(containerColor = Color(0xFF0f0f23)),
+                title = {
+                    var now by remember { mutableStateOf(System.currentTimeMillis()) }
+                    LaunchedEffect(Unit) { while(true) { delay(1000); now = System.currentTimeMillis() } }
+                    val matchElapsed = formatTime(vm.matchStartTime, now)
+                    val turnElapsed = ((now - vm.turnStartTime) / 1000).toInt()
+                    Text("$matchElapsed · ${turnElapsed}s", color = Color.White.copy(alpha = 0.7f))
+                },
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.background),
                 actions = {
                     IconButton(onClick = { showResetConfirm = true }) {
                         Icon(Icons.Default.Refresh, contentDescription = null,
@@ -60,14 +68,21 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
                 items(vm.sortedPlayers) { player ->
                     val isCurrent = player.id == vm.currentPlayer.id
                     val topScore = vm.sortedPlayers.firstOrNull()?.score ?: 0
-                    PlayerCard(player = player, isCurrent = isCurrent,
-                        rank = vm.sortedPlayers.indexOf(player) + 1, topScore = topScore)
+                    val isRecent = player.id == vm.recentScorePlayerId
+                    LaunchedEffect(vm.recentScorePlayerId) {
+                        if (vm.recentScorePlayerId != null) { delay(600); vm.clearRecentScore() }
+                    }
+                    PlayerCard(
+                        player = player, isCurrent = isCurrent, isRecent = isRecent,
+                        rank = vm.sortedPlayers.indexOf(player) + 1, topScore = topScore,
+                        onClick = { if (!isCurrent) vm.selectPlayer(player.id) }
+                    )
                 }
             }
 
             // Controls
             Column(
-                modifier = Modifier.background(Color(0xFF0f0f23)).padding(16.dp),
+                modifier = Modifier.background(MaterialTheme.colorScheme.background).padding(16.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Row(horizontalArrangement = Arrangement.Center,
@@ -112,9 +127,9 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
     }
     if (showRedCountMenu) {
         Dialog(onDismissRequest = { showRedCountMenu = false }) {
-            Card(colors = CardDefaults.cardColors(containerColor = Color(0xFF16213e))) {
+            Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
                 Column(modifier = Modifier.padding(24.dp)) {
-                    Text(LocalizationManager.str("redCount.title"), color = Color.White, fontWeight = FontWeight.Bold, fontSize = 18.sp)
+                    Text(LocalizationManager.str("redCount.title"), color = MaterialTheme.colorScheme.onSurface, fontWeight = FontWeight.Bold, fontSize = 18.sp)
                     Spacer(modifier = Modifier.height(12.dp))
                     (2..5).forEach { count ->
                         TextButton(onClick = { showRedCountMenu = false; vm.scoreMultipleReds(count) }, modifier = Modifier.fillMaxWidth()) {
@@ -143,7 +158,7 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
                     Text("Cancel", color = Color.White.copy(alpha = 0.6f))
                 }
             },
-            containerColor = Color(0xFF16213e)
+            containerColor = MaterialTheme.colorScheme.surfaceVariant
         )
     }
     if (showEndConfirm) {
@@ -198,14 +213,14 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
                     Text(LocalizationManager.str("sb.continue"), color = Color.White.copy(alpha = 0.6f))
                 }
             },
-            containerColor = Color(0xFF16213e)
+            containerColor = MaterialTheme.colorScheme.surfaceVariant
         )
     }
     if (vm.showReSpotDialog) {
         Dialog(onDismissRequest = { }) {
-            Card(colors = CardDefaults.cardColors(containerColor = Color(0xFF16213e))) {
+            Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
                 Column(modifier = Modifier.padding(24.dp)) {
-                    Text(LocalizationManager.str("respot.title"), color = Color.White, fontWeight = FontWeight.Bold, fontSize = 20.sp)
+                    Text(LocalizationManager.str("respot.title"), color = MaterialTheme.colorScheme.onSurface, fontWeight = FontWeight.Bold, fontSize = 20.sp)
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(LocalizationManager.str("respot.msg"),
                         color = Color.White.copy(alpha = 0.7f), fontSize = 14.sp)
@@ -301,12 +316,23 @@ fun RowScope.BallBtn(ball: SnookerBall, disabled: Boolean, onClick: () -> Unit) 
 }
 
 @Composable
-fun PlayerCard(player: com.pakertong.snooker.model.Player, isCurrent: Boolean, rank: Int, topScore: Int = 0) {
+fun PlayerCard(
+    player: com.pakertong.snooker.model.Player,
+    isCurrent: Boolean,
+    isRecent: Boolean = false,
+    rank: Int,
+    topScore: Int = 0,
+    onClick: (() -> Unit)? = null
+) {
     Card(
         colors = CardDefaults.cardColors(
             containerColor = if (isCurrent) Color(player.color).copy(alpha = 0.15f) else Color.White.copy(alpha = 0.04f)
         ),
-        shape = RoundedCornerShape(14.dp)
+        shape = RoundedCornerShape(14.dp),
+        modifier = Modifier
+            .fillMaxWidth()
+            .then(if (onClick != null && !isCurrent) Modifier.clickable(onClick = onClick) else Modifier)
+            .then(if (isRecent) Modifier.border(2.dp, Color(0xFFFFD700), RoundedCornerShape(14.dp)) else Modifier)
     ) {
         Row(modifier = Modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
@@ -357,8 +383,8 @@ fun BottomChip(label: String, icon: androidx.compose.ui.graphics.vector.ImageVec
     }
 }
 
-fun formatTime(startMs: Long): String {
-    val elapsed = (System.currentTimeMillis() - startMs) / 1000
+fun formatTime(startMs: Long, nowMs: Long = System.currentTimeMillis()): String {
+    val elapsed = (nowMs - startMs) / 1000
     val m = elapsed / 60
     val s = elapsed % 60
     return "%02d:%02d".format(m, s)

@@ -58,6 +58,8 @@ sealed class UndoAction {
         val redsChange: Int = 0,
         val snapshot: EndGameSnapshot
     ) : UndoAction()
+
+    data class Miss(val snapshot: EndGameSnapshot) : UndoAction()
 }
 
 // Match Record

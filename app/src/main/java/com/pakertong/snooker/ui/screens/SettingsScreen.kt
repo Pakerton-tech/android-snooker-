@@ -3,6 +3,8 @@ package com.pakertong.snooker.ui.screens
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
@@ -17,13 +19,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.pakertong.snooker.model.AppLanguage
 import com.pakertong.snooker.model.LocalizationManager
-
-enum class AppTheme { SYSTEM, DARK, LIGHT }
-
-object ThemeManager {
-    var currentTheme by mutableStateOf(AppTheme.SYSTEM)
-    var matchCount by mutableStateOf(0)
-}
+import com.pakertong.snooker.ui.theme.AppTheme
+import com.pakertong.snooker.ui.theme.ThemeManager
 
 @Composable
 fun SettingsScreen(onClearData: () -> Unit) {
@@ -32,7 +29,8 @@ fun SettingsScreen(onClearData: () -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF1a1a2e))
+            .background(MaterialTheme.colorScheme.surface)
+            .verticalScroll(rememberScrollState())
             .padding(24.dp)
     ) {
         Text(LocalizationManager.str("settings.title"), fontSize = 28.sp, fontWeight = FontWeight.Bold, color = Color.White)
@@ -81,6 +79,26 @@ fun SettingsScreen(onClearData: () -> Unit) {
                     tint = Color.White.copy(alpha = 0.3f))
             }
         }
+
+        Spacer(modifier = Modifier.height(24.dp))
+
+        // About section
+        SectionTitle(LocalizationManager.str("settings.about"))
+        Spacer(modifier = Modifier.height(8.dp))
+        Card(
+            colors = CardDefaults.cardColors(containerColor = Color.White.copy(alpha = 0.04f)),
+            shape = RoundedCornerShape(12.dp),
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.padding(16.dp)
+            ) {
+                Text(LocalizationManager.str("settings.version"), color = Color.White.copy(alpha = 0.6f),
+                    fontSize = 15.sp, modifier = Modifier.weight(1f))
+                Text("1.0.0", color = Color.White.copy(alpha = 0.4f), fontSize = 15.sp)
+            }
+        }
     }
 
     if (showDeleteAll) {
@@ -99,7 +117,7 @@ fun SettingsScreen(onClearData: () -> Unit) {
                     Text(LocalizationManager.str("detail.cancel"), color = Color.White.copy(alpha = 0.6f))
                 }
             },
-            containerColor = Color(0xFF16213e)
+            containerColor = MaterialTheme.colorScheme.surfaceVariant
         )
     }
 }

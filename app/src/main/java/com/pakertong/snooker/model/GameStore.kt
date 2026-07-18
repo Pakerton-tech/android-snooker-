@@ -20,6 +20,7 @@ class GameStore(private val context: Context) {
             for (i in 0 until arr.length()) {
                 matches.add(parseMatch(arr.getJSONObject(i)))
             }
+            matches.sortByDescending { it.date }
         } catch (e: Exception) {
             matches.clear()
         }

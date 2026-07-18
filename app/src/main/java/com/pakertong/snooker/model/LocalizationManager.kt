@@ -73,7 +73,7 @@ object LocalizationManager {
         ),
         "setup.redBalls" to mapOf(
             AppLanguage.ZH_CN to "红球数",
-            AppLanguage.JA_JP to "赤球数",
+            AppLanguage.JA_JP to "赤ボール数",
             AppLanguage.EN to "Red Balls"
         ),
         // Scoreboard
@@ -83,9 +83,10 @@ object LocalizationManager {
             AppLanguage.EN to "Undo"
         ),
         "sb.foul" to mapOf(
-            AppLanguage.ZH_CN to "犯规罚分",
-            AppLanguage.JA_JP to "ファウル罰点",
-            AppLanguage.EN to "Foul Penalty"
+            AppLanguage.ZH_CN to "犯规・特殊处理" +
+                    "",
+            AppLanguage.JA_JP to "ファウル・特別処理",
+            AppLanguage.EN to "Foul・Special"
         ),
         "sb.end" to mapOf(
             AppLanguage.ZH_CN to "结束",
@@ -99,12 +100,12 @@ object LocalizationManager {
         ),
         "sb.shooting" to mapOf(
             AppLanguage.ZH_CN to "击球",
-            AppLanguage.JA_JP to "手番",
+            AppLanguage.JA_JP to "の番",
             AppLanguage.EN to "'s turn"
         ),
         "sb.reds" to mapOf(
             AppLanguage.ZH_CN to "剩余红球",
-            AppLanguage.JA_JP to "残り赤",
+            AppLanguage.JA_JP to "残り赤ボール",
             AppLanguage.EN to "Reds"
         ),
         "sb.table" to mapOf(
@@ -180,7 +181,7 @@ object LocalizationManager {
         ),
         "foul.reduceRed" to mapOf(
             AppLanguage.ZH_CN to "红球减少",
-            AppLanguage.JA_JP to "赤玉減少",
+            AppLanguage.JA_JP to "赤ボール減少",
             AppLanguage.EN to "Reduce Red"
         ),
         "foul.custom" to mapOf(
@@ -200,7 +201,7 @@ object LocalizationManager {
         ),
         "foul.freeBallDesc" to mapOf(
             AppLanguage.ZH_CN to "对方犯规后，指定任意球作为目标球击打",
-            AppLanguage.JA_JP to "相手の反則後、任意の球を目標球として撞く",
+            AppLanguage.JA_JP to "相手の反則後、任意のボールを目標として撞く",
             AppLanguage.EN to "Opponent fouled. Nominate any ball as target."
         ),
         "foul.minFoul" to mapOf(
@@ -210,18 +211,18 @@ object LocalizationManager {
         ),
         "foul.snooker" to mapOf(
             AppLanguage.ZH_CN to "让杆",
-            AppLanguage.JA_JP to "セーフティ",
-            AppLanguage.EN to "Leave a Snooker"
+            AppLanguage.JA_JP to "パス",
+            AppLanguage.EN to "Pass to opponent"
         ),
         "foul.snookerDesc" to mapOf(
             AppLanguage.ZH_CN to "让对手击球",
-            AppLanguage.JA_JP to "プレイヤーのみ交代、罰点なし",
-            AppLanguage.EN to "Pass turn to next player without penalty"
+            AppLanguage.JA_JP to "相手にパス",
+            AppLanguage.EN to "Pass turn to next player"
         ),
         // Red count menu
         "redCount.title" to mapOf(
             AppLanguage.ZH_CN to "红球 × ?",
-            AppLanguage.JA_JP to "赤球 × ?",
+            AppLanguage.JA_JP to "赤ボール × ?",
             AppLanguage.EN to "Red Ball x ?"
         ),
         "redCount.cancel" to mapOf(
@@ -237,8 +238,8 @@ object LocalizationManager {
         // Re-spot
         "respot.title" to mapOf(
             AppLanguage.ZH_CN to "争黑!",
-            AppLanguage.JA_JP to "ブラック再セット!",
-            AppLanguage.EN to "Re-spot Black!"
+            AppLanguage.JA_JP to "ブラックボールゲーム!",
+            AppLanguage.EN to "Black Ball Game!"
         ),
         "respot.msg" to mapOf(
             AppLanguage.ZH_CN to "双方得分相等，请选择开球球员",
@@ -416,6 +417,29 @@ object LocalizationManager {
             AppLanguage.ZH_CN to "设置",
             AppLanguage.JA_JP to "設定",
             AppLanguage.EN to "Settings"
+        ),
+        // Detail extra
+        "detail.events" to mapOf(
+            AppLanguage.ZH_CN to "事件记录",
+            AppLanguage.JA_JP to "イベント記録",
+            AppLanguage.EN to "Events"
+        ),
+        // History filter
+        "history.showAll" to mapOf(
+            AppLanguage.ZH_CN to "全部",
+            AppLanguage.JA_JP to "すべて",
+            AppLanguage.EN to "Show All"
+        ),
+        // Settings about
+        "settings.version" to mapOf(
+            AppLanguage.ZH_CN to "版本",
+            AppLanguage.JA_JP to "バージョン",
+            AppLanguage.EN to "Version"
+        ),
+        "settings.about" to mapOf(
+            AppLanguage.ZH_CN to "关于",
+            AppLanguage.JA_JP to "について",
+            AppLanguage.EN to "About"
         ),
     )
 }

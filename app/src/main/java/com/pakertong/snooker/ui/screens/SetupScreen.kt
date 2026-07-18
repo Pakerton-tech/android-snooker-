@@ -3,6 +3,8 @@ package com.pakertong.snooker.ui.screens
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
@@ -15,30 +17,35 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.pakertong.snooker.model.GameStore
 import com.pakertong.snooker.model.LocalizationManager
 import com.pakertong.snooker.viewmodel.GameViewModel
 
 @Composable
 fun MainScreen(vm: GameViewModel = viewModel()) {
+    val context = LocalContext.current
+    val store = remember { GameStore(context).also { it.load() } }
     var inGame by remember { mutableStateOf(false) }
     var playerNames by remember { mutableStateOf(listOf("", "")) }
     var playerCount by remember { mutableIntStateOf(2) }
     var redBallCount by remember { mutableIntStateOf(15) }
     var mainTab by remember { mutableIntStateOf(0) }
 
-    var matches by remember { mutableStateOf(listOf<com.pakertong.snooker.model.MatchRecord>()) }
+    var matches by remember { mutableStateOf(store.allMatches) }
+    fun refreshMatches() { matches = store.allMatches }
 
     Scaffold(
         bottomBar = {
             if (!inGame) {
                 NavigationBar(
-                    containerColor = Color(0xFF0f0f23)
+                    containerColor = MaterialTheme.colorScheme.background
                 ) {
                     NavigationBarItem(
                         selected = mainTab == 0,
@@ -61,7 +68,8 @@ fun MainScreen(vm: GameViewModel = viewModel()) {
                 }
             }
         }
-    ) {
+    ) { padding ->
+        Box(modifier = Modifier.fillMaxSize().padding(padding)) {
         when (mainTab) {
             0 -> {
                 if (!inGame) {
@@ -102,7 +110,8 @@ fun MainScreen(vm: GameViewModel = viewModel()) {
                                 winnerName = sortedPlayers.firstOrNull()?.name ?: "",
                                 events = vm.events.toList()
                             )
-                            matches = listOf(record) + matches
+                            store.save(record)
+                            refreshMatches()
                             inGame = false
                         }
                     )
@@ -110,13 +119,14 @@ fun MainScreen(vm: GameViewModel = viewModel()) {
             }
             1 -> HistoryScreen(
                 matches = matches,
-                onDelete = { id -> matches = matches.filter { it.id != id } },
-                onDeleteAll = { matches = emptyList() }
+                onDelete = { id -> store.delete(id); refreshMatches() },
+                onDeleteAll = { store.deleteAll(); refreshMatches() }
             )
             2 -> SettingsScreen(
-                onClearData = { matches = emptyList() }
+                onClearData = { store.deleteAll(); refreshMatches() }
             )
         }
+    }
     }
 }
 
@@ -139,9 +149,9 @@ fun SetupScreen(
                 .fillMaxSize()
                 .background(Color(0xFF1a1a2e))
                 .padding(padding)
+                .verticalScroll(rememberScrollState())
                 .padding(24.dp),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
             // Header
             Text(LocalizationManager.str("app.name"),
@@ -219,7 +229,7 @@ fun SetupScreen(
             ) {
                 Text(LocalizationManager.str("setup.redBalls"), color = Color(0xFFDC143C),
                     fontSize = 16.sp, fontWeight = FontWeight.SemiBold)
-                Spacer(modifier = Modifier.weight(1f))
+                Spacer(modifier = Modifier.width(16.dp))
                 // Minus button
                 IconButton(
                     onClick = { if (redBallCount > 1) onRedBallCountChange(redBallCount - 1) },
@@ -275,7 +285,7 @@ fun SetupScreen(
                                 Text(LocalizationManager.str("redEditor.cancel"), color = Color.White.copy(alpha = 0.6f))
                             }
                         },
-                        containerColor = Color(0xFF16213e)
+                        containerColor = MaterialTheme.colorScheme.surfaceVariant
                     )
                 }
                 Spacer(modifier = Modifier.width(8.dp))

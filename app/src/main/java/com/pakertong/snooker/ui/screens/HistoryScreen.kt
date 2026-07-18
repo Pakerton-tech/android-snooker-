@@ -2,11 +2,14 @@ package com.pakertong.snooker.ui.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
@@ -15,6 +18,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -28,6 +32,15 @@ import java.util.*
 fun HistoryScreen(matches: List<MatchRecord>, onDelete: (String) -> Unit, onDeleteAll: () -> Unit) {
     var showDeleteAllConfirm by remember { mutableStateOf(false) }
     var selectedMatch by remember { mutableStateOf<MatchRecord?>(null) }
+
+    val uniqueDates = remember(matches) {
+        matches.map { dateKey(it.date) }.distinct()
+    }
+    var selectedDate by remember { mutableStateOf<String?>(null) }
+
+    val filteredMatches = remember(matches, selectedDate) {
+        if (selectedDate == null) matches else matches.filter { dateKey(it.date) == selectedDate }
+    }
 
     Scaffold(
         containerColor = Color(0xFF1a1a2e)
@@ -49,7 +62,38 @@ fun HistoryScreen(matches: List<MatchRecord>, onDelete: (String) -> Unit, onDele
                 }
             }
 
-            if (matches.isEmpty()) {
+            // Date filter chips
+            if (uniqueDates.isNotEmpty()) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 16.dp)
+                        .horizontalScroll(rememberScrollState()),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    val allSelected = selectedDate == null
+                    FilterChip(
+                        label = LocalizationManager.str("history.showAll"),
+                        selected = allSelected,
+                        onClick = { selectedDate = null }
+                    )
+                    uniqueDates.forEach { dateStr ->
+                        val cal = Calendar.getInstance().apply {
+                            val parts = dateStr.split("-").map { it.toInt() }
+                            set(parts[0], parts[1] - 1, parts[2])
+                        }
+                        val label = String.format("%02d/%02d", cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH))
+                        FilterChip(
+                            label = label,
+                            selected = selectedDate == dateStr,
+                            onClick = { selectedDate = dateStr }
+                        )
+                    }
+                }
+                Spacer(modifier = Modifier.height(8.dp))
+            }
+
+            if (filteredMatches.isEmpty()) {
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
                         Icon(Icons.Default.History, contentDescription = null,
@@ -63,8 +107,12 @@ fun HistoryScreen(matches: List<MatchRecord>, onDelete: (String) -> Unit, onDele
                     contentPadding = PaddingValues(16.dp),
                     verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
-                    items(matches) { match ->
-                        MatchCard(match = match, onClick = { selectedMatch = match })
+                    items(filteredMatches, key = { it.id }) { match ->
+                        SwipeToDeleteItem(
+                            onDelete = { onDelete(match.id) }
+                        ) {
+                            MatchCard(match = match, onClick = { selectedMatch = match })
+                        }
                     }
                 }
             }
@@ -94,6 +142,48 @@ fun HistoryScreen(matches: List<MatchRecord>, onDelete: (String) -> Unit, onDele
         MatchDetailDialog(match = match, onDismiss = { selectedMatch = null },
             onDelete = { onDelete(match.id); selectedMatch = null })
     }
+}
+
+@Composable
+fun FilterChip(label: String, selected: Boolean, onClick: () -> Unit) {
+    Box(
+        modifier = Modifier
+            .clip(RoundedCornerShape(50))
+            .background(if (selected) Color(0xFFFF4500) else Color.White.copy(alpha = 0.08f))
+            .clickable(onClick = onClick)
+            .padding(horizontal = 14.dp, vertical = 8.dp)
+    ) {
+        Text(label, color = Color.White, fontSize = 13.sp, fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal)
+    }
+}
+
+@OptIn(androidx.compose.material.ExperimentalMaterialApi::class)
+@Composable
+fun SwipeToDeleteItem(onDelete: () -> Unit, content: @Composable () -> Unit) {
+    val dismissState = androidx.compose.material.rememberDismissState()
+    if (dismissState.isDismissed(androidx.compose.material.DismissDirection.EndToStart)) {
+        LaunchedEffect(dismissState) {
+            onDelete()
+            dismissState.reset()
+        }
+    }
+    androidx.compose.material.SwipeToDismiss(
+        state = dismissState,
+        directions = setOf(androidx.compose.material.DismissDirection.EndToStart),
+        background = {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .clip(RoundedCornerShape(12.dp))
+                    .background(Color.Red.copy(alpha = 0.6f))
+                    .padding(horizontal = 20.dp),
+                contentAlignment = Alignment.CenterEnd
+            ) {
+                Icon(Icons.Default.Delete, contentDescription = null, tint = Color.White)
+            }
+        },
+        dismissContent = { content() }
+    )
 }
 
 @Composable
@@ -143,6 +233,8 @@ fun MatchCard(match: MatchRecord, onClick: () -> Unit) {
 @Composable
 fun MatchDetailDialog(match: MatchRecord, onDismiss: () -> Unit, onDelete: () -> Unit) {
     val dateFormat = SimpleDateFormat("yyyy/MM/dd HH:mm", Locale.getDefault())
+    val timeFormat = SimpleDateFormat("HH:mm:ss", Locale.getDefault())
+    val context = LocalContext.current
     var showDeleteConfirm by remember { mutableStateOf(false) }
 
     Dialog(onDismissRequest = onDismiss) {
@@ -184,6 +276,37 @@ fun MatchDetailDialog(match: MatchRecord, onDismiss: () -> Unit, onDelete: () ->
                     }
                 }
 
+                // Events timeline
+                if (match.events.isNotEmpty()) {
+                    Spacer(modifier = Modifier.height(12.dp))
+                    Text(LocalizationManager.str("detail.events"),
+                        color = Color.White.copy(alpha = 0.6f), fontSize = 14.sp, fontWeight = FontWeight.SemiBold)
+                    Spacer(modifier = Modifier.height(4.dp))
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .heightIn(max = 200.dp)
+                            .verticalScroll(rememberScrollState())
+                    ) {
+                        match.events.forEach { event ->
+                            Row(verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier.fillMaxWidth().padding(vertical = 2.dp)) {
+                                val dotColor = if (event.isFoul) Color(0xFFFF4500) else Color(0xFFFFD700)
+                                Box(modifier = Modifier.size(6.dp).clip(CircleShape).background(dotColor))
+                                Spacer(modifier = Modifier.width(8.dp))
+                                Text(event.playerName, color = Color.White.copy(alpha = 0.7f), fontSize = 12.sp,
+                                    modifier = Modifier.widthIn(min = 40.dp, max = 80.dp))
+                                Spacer(modifier = Modifier.width(4.dp))
+                                val ballName = LocalizationManager.str(event.ballLocKey)
+                                Text("+${event.points} - $ballName", color = Color.White.copy(alpha = 0.8f), fontSize = 12.sp,
+                                    modifier = Modifier.weight(1f))
+                                Text(timeFormat.format(Date(event.timestamp)),
+                                    color = Color.White.copy(alpha = 0.4f), fontSize = 11.sp)
+                            }
+                        }
+                    }
+                }
+
                 Spacer(modifier = Modifier.height(16.dp))
 
                 // Buttons
@@ -194,7 +317,21 @@ fun MatchDetailDialog(match: MatchRecord, onDismiss: () -> Unit, onDelete: () ->
                         Spacer(modifier = Modifier.width(4.dp))
                         Text(LocalizationManager.str("detail.delete"))
                     }
-                    OutlinedButton(onClick = { /* share - platform dependent */ },
+                    OutlinedButton(onClick = {
+                        val shareText = buildString {
+                            appendLine("${match.winnerName} - ${dateFormat.format(Date(match.date))}")
+                            appendLine("Duration: ${formatDuration(match.duration)}")
+                            match.players.forEach { p ->
+                                appendLine("${p.name}: ${p.score} (Highest Break: ${p.highestBreak})")
+                            }
+                            appendLine("Best Break: ${match.bestBreak}")
+                        }
+                        val intent = android.content.Intent(android.content.Intent.ACTION_SEND).apply {
+                            type = "text/plain"
+                            putExtra(android.content.Intent.EXTRA_TEXT, shareText)
+                        }
+                        context.startActivity(android.content.Intent.createChooser(intent, null))
+                    },
                         colors = ButtonDefaults.outlinedButtonColors(contentColor = Color.White)) {
                         Icon(Icons.Default.Share, contentDescription = null, modifier = Modifier.size(16.dp))
                         Spacer(modifier = Modifier.width(4.dp))
@@ -219,6 +356,11 @@ fun MatchDetailDialog(match: MatchRecord, onDismiss: () -> Unit, onDelete: () ->
             containerColor = Color(0xFF16213e)
         )
     }
+}
+
+private fun dateKey(dateMs: Long): String {
+    val cal = Calendar.getInstance().apply { timeInMillis = dateMs }
+    return "${cal.get(Calendar.YEAR)}-${cal.get(Calendar.MONTH) + 1}-${cal.get(Calendar.DAY_OF_MONTH)}"
 }
 
 private fun formatDuration(seconds: Long): String {
