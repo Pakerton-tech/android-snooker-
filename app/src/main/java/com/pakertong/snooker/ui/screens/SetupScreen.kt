@@ -147,7 +147,7 @@ fun SetupScreen(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .background(Color(0xFF1a1a2e))
+                .background(MaterialTheme.colorScheme.surface)
                 .padding(padding)
                 .verticalScroll(rememberScrollState())
                 .padding(24.dp),
@@ -155,16 +155,16 @@ fun SetupScreen(
         ) {
             // Header
             Text(LocalizationManager.str("app.name"),
-                fontSize = 28.sp, fontWeight = FontWeight.Bold, color = Color.White)
+                fontSize = 28.sp, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onSurface)
             Spacer(modifier = Modifier.height(4.dp))
             Text(LocalizationManager.str("app.subtitle"),
-                fontSize = 14.sp, color = Color.White.copy(alpha = 0.6f))
+                fontSize = 14.sp, color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f))
             Spacer(modifier = Modifier.height(32.dp))
 
             // Player count
             Text(LocalizationManager.str("setup.playerCount"),
                 fontSize = 16.sp, fontWeight = FontWeight.SemiBold,
-                color = Color.White.copy(alpha = 0.7f))
+                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f))
             Spacer(modifier = Modifier.height(12.dp))
             Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                 (2..4).forEach { n ->
@@ -172,12 +172,12 @@ fun SetupScreen(
                     Button(
                         onClick = { onPlayerCountChange(n) },
                         colors = ButtonDefaults.buttonColors(
-                            containerColor = if (selected) Color(0xFFFF4500) else Color.White.copy(alpha = 0.08f)
+                            containerColor = if (selected) Color(0xFFFF4500) else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
                         ),
                         shape = RoundedCornerShape(12.dp),
                         modifier = Modifier.weight(1f)
                     ) {
-                        Text("${n}P", color = Color.White,
+                        Text("${n}P", color = MaterialTheme.colorScheme.onSurface,
                             fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal)
                     }
                 }
@@ -187,7 +187,7 @@ fun SetupScreen(
             // Player names
             Text(LocalizationManager.str("setup.playerName"),
                 fontSize = 16.sp, fontWeight = FontWeight.SemiBold,
-                color = Color.White.copy(alpha = 0.7f))
+                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f))
             Spacer(modifier = Modifier.height(12.dp))
             playerNames.forEachIndexed { i, name ->
                 Row(verticalAlignment = Alignment.CenterVertically) {
@@ -201,15 +201,15 @@ fun SetupScreen(
                     OutlinedTextField(
                         value = name,
                         onValueChange = { onNameChange(i, it) },
-                        placeholder = { Text("Player ${i + 1}", color = Color.White.copy(alpha = 0.3f)) },
+                        placeholder = { Text("Player ${i + 1}", color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.3f)) },
                         singleLine = true,
                         colors = OutlinedTextFieldDefaults.colors(
-                            focusedTextColor = Color.White,
-                            unfocusedTextColor = Color.White,
+                            focusedTextColor = MaterialTheme.colorScheme.onSurface,
+                            unfocusedTextColor = MaterialTheme.colorScheme.onSurface,
                             focusedBorderColor = Color.Transparent,
                             unfocusedBorderColor = Color.Transparent,
-                            focusedContainerColor = Color.White.copy(alpha = 0.08f),
-                            unfocusedContainerColor = Color.White.copy(alpha = 0.08f)
+                            focusedContainerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
+                            unfocusedContainerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
                         ),
                         shape = RoundedCornerShape(10.dp),
                         modifier = Modifier.fillMaxWidth()
@@ -224,7 +224,7 @@ fun SetupScreen(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .background(Color.White.copy(alpha = 0.04f), RoundedCornerShape(12.dp))
+                    .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f), RoundedCornerShape(12.dp))
                     .padding(16.dp)
             ) {
                 Text(LocalizationManager.str("setup.redBalls"), color = Color(0xFFDC143C),
@@ -235,7 +235,7 @@ fun SetupScreen(
                     onClick = { if (redBallCount > 1) onRedBallCountChange(redBallCount - 1) },
                     enabled = redBallCount > 1
                 ) {
-                    Text("−", color = Color.White, fontSize = 24.sp)
+                    Text("−", color = MaterialTheme.colorScheme.onSurface, fontSize = 24.sp)
                 }
                 Spacer(modifier = Modifier.width(8.dp))
                 // Clickable number
@@ -251,7 +251,7 @@ fun SetupScreen(
                     var editorValue by remember { mutableStateOf(redBallCount.toString()) }
                     AlertDialog(
                         onDismissRequest = { showEditor = false },
-                        title = { Text(LocalizationManager.str("redEditor.title"), color = Color.White) },
+                        title = { Text(LocalizationManager.str("redEditor.title"), color = MaterialTheme.colorScheme.onSurface) },
                         text = {
                             OutlinedTextField(
                                 value = editorValue,
@@ -259,16 +259,16 @@ fun SetupScreen(
                                     val filtered = v.filter { it.isDigit() }
                                     if (filtered.length <= 2) editorValue = filtered
                                 },
-                                label = { Text(LocalizationManager.str("setup.redBalls"), color = Color.White.copy(alpha = 0.5f)) },
+                                label = { Text(LocalizationManager.str("setup.redBalls"), color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f)) },
                                 singleLine = true,
                                 keyboardOptions = androidx.compose.foundation.text.KeyboardOptions(
                                     keyboardType = androidx.compose.ui.text.input.KeyboardType.Number
                                 ),
                                 colors = OutlinedTextFieldDefaults.colors(
-                                    focusedTextColor = Color.White,
-                                    unfocusedTextColor = Color.White,
+                                    focusedTextColor = MaterialTheme.colorScheme.onSurface,
+                                    unfocusedTextColor = MaterialTheme.colorScheme.onSurface,
                                     focusedBorderColor = Color(0xFFDC143C),
-                                    unfocusedBorderColor = Color.White.copy(alpha = 0.3f)
+                                    unfocusedBorderColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.3f)
                                 ),
                                 modifier = Modifier.fillMaxWidth()
                             )
@@ -282,7 +282,7 @@ fun SetupScreen(
                         },
                         dismissButton = {
                             TextButton(onClick = { showEditor = false }) {
-                                Text(LocalizationManager.str("redEditor.cancel"), color = Color.White.copy(alpha = 0.6f))
+                                Text(LocalizationManager.str("redEditor.cancel"), color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f))
                             }
                         },
                         containerColor = MaterialTheme.colorScheme.surfaceVariant
@@ -294,7 +294,7 @@ fun SetupScreen(
                     onClick = { if (redBallCount < 15) onRedBallCountChange(redBallCount + 1) },
                     enabled = redBallCount < 15
                 ) {
-                    Text("+", color = Color.White, fontSize = 24.sp)
+                    Text("+", color = MaterialTheme.colorScheme.onSurface, fontSize = 24.sp)
                 }
             }
             Spacer(modifier = Modifier.height(40.dp))

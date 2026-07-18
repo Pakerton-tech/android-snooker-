@@ -47,13 +47,13 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
                     LaunchedEffect(Unit) { while(true) { delay(1000); now = System.currentTimeMillis() } }
                     val matchElapsed = formatTime(vm.matchStartTime, now)
                     val turnElapsed = ((now - vm.turnStartTime) / 1000).toInt()
-                    Text("$matchElapsed · ${turnElapsed}s", color = Color.White.copy(alpha = 0.7f))
+                    Text("$matchElapsed · ${turnElapsed}s", color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f))
                 },
                 colors = TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.background),
                 actions = {
                     IconButton(onClick = { showResetConfirm = true }) {
                         Icon(Icons.Default.Refresh, contentDescription = null,
-                            tint = Color.White.copy(alpha = if (vm.isGameActive) 0.6f else 0.2f))
+                            tint = MaterialTheme.colorScheme.onSurface.copy(alpha = if (vm.isGameActive) 0.6f else 0.2f))
                     }
                 }
             )
@@ -109,9 +109,9 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
                 Spacer(modifier = Modifier.height(12.dp))
 
                 Row(horizontalArrangement = Arrangement.SpaceEvenly, modifier = Modifier.fillMaxWidth()) {
-                    BottomChip(LocalizationManager.str("sb.undo"), Icons.Default.Undo, Color.White.copy(alpha = 0.7f), vm.hasUndo) { vm.undo() }
+                    BottomChip(LocalizationManager.str("sb.undo"), Icons.Default.Undo, MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f), vm.hasUndo) { vm.undo() }
                     BottomChip(LocalizationManager.str("sb.foul"), Icons.Default.WarningAmber, Color(0xFFFF9800), true) { showFoulSheet = true }
-                    BottomChip(LocalizationManager.str("sb.end"), Icons.Default.Flag, Color.White.copy(alpha = 0.6f), true) { showEndConfirm = true }
+                    BottomChip(LocalizationManager.str("sb.end"), Icons.Default.Flag, MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f), true) { showEndConfirm = true }
                 }
             }
         }
@@ -127,17 +127,17 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
     }
     if (showRedCountMenu) {
         Dialog(onDismissRequest = { showRedCountMenu = false }) {
-            Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
+            Card(colors = CardDefaults.cardColors(containerColor = Color(0xFF16213e))) {
                 Column(modifier = Modifier.padding(24.dp)) {
                     Text(LocalizationManager.str("redCount.title"), color = MaterialTheme.colorScheme.onSurface, fontWeight = FontWeight.Bold, fontSize = 18.sp)
                     Spacer(modifier = Modifier.height(12.dp))
                     (2..5).forEach { count ->
                         TextButton(onClick = { showRedCountMenu = false; vm.scoreMultipleReds(count) }, modifier = Modifier.fillMaxWidth()) {
-                            Text("$count Reds (${count}pts)", color = Color.White, fontWeight = FontWeight.SemiBold)
+                            Text("$count Reds (${count}pts)", color = MaterialTheme.colorScheme.onSurface, fontWeight = FontWeight.SemiBold)
                         }
                     }
                     TextButton(onClick = { showRedCountMenu = false }, modifier = Modifier.align(Alignment.End)) {
-                        Text(LocalizationManager.str("redCount.cancel"), color = Color.White.copy(alpha = 0.6f))
+                        Text(LocalizationManager.str("redCount.cancel"), color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f))
                     }
                 }
             }
@@ -146,8 +146,8 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
     if (showResetConfirm) {
         AlertDialog(
             onDismissRequest = { showResetConfirm = false },
-            title = { Text("Reset scores?", color = Color.White) },
-            text = { Text("All scores will be cleared", color = Color.White.copy(alpha = 0.7f)) },
+            title = { Text("Reset scores?", color = MaterialTheme.colorScheme.onSurface) },
+            text = { Text("All scores will be cleared", color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f)) },
             confirmButton = {
                 TextButton(onClick = { showResetConfirm = false; vm.resetGame() }) {
                     Text("Reset", color = Color(0xFFFF4500))
@@ -155,16 +155,16 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
             },
             dismissButton = {
                 TextButton(onClick = { showResetConfirm = false }) {
-                    Text("Cancel", color = Color.White.copy(alpha = 0.6f))
+                    Text("Cancel", color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f))
                 }
             },
-            containerColor = MaterialTheme.colorScheme.surfaceVariant
+            containerColor = Color(0xFF16213e)
         )
     }
     if (showEndConfirm) {
         AlertDialog(
             onDismissRequest = { showEndConfirm = false },
-            title = { Text(LocalizationManager.str("sb.endTitle"), color = Color.White) },
+            title = { Text(LocalizationManager.str("sb.endTitle"), color = MaterialTheme.colorScheme.onSurface) },
             text = {
                 val sorted = vm.sortedPlayers
                 val winner = sorted.firstOrNull()
@@ -188,7 +188,7 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
                     sorted.forEach { p ->
                         Row(horizontalArrangement = Arrangement.SpaceBetween,
                             modifier = Modifier.fillMaxWidth()) {
-                            Text(p.name, color = Color.White)
+                            Text(p.name, color = MaterialTheme.colorScheme.onSurface)
                             Text("${p.score}", color = Color(0xFFFF4500), fontWeight = FontWeight.Bold)
                         }
                         Spacer(modifier = Modifier.height(2.dp))
@@ -210,27 +210,27 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
             },
             dismissButton = {
                 TextButton(onClick = { showEndConfirm = false }) {
-                    Text(LocalizationManager.str("sb.continue"), color = Color.White.copy(alpha = 0.6f))
+                    Text(LocalizationManager.str("sb.continue"), color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f))
                 }
             },
-            containerColor = MaterialTheme.colorScheme.surfaceVariant
+            containerColor = Color(0xFF16213e)
         )
     }
     if (vm.showReSpotDialog) {
         Dialog(onDismissRequest = { }) {
-            Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
+            Card(colors = CardDefaults.cardColors(containerColor = Color(0xFF16213e))) {
                 Column(modifier = Modifier.padding(24.dp)) {
                     Text(LocalizationManager.str("respot.title"), color = MaterialTheme.colorScheme.onSurface, fontWeight = FontWeight.Bold, fontSize = 20.sp)
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(LocalizationManager.str("respot.msg"),
-                        color = Color.White.copy(alpha = 0.7f), fontSize = 14.sp)
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f), fontSize = 14.sp)
                     Spacer(modifier = Modifier.height(16.dp))
                     vm.players.forEachIndexed { i, p ->
                         Button(
                             onClick = { vm.startReSpotBlack(i) },
                             colors = ButtonDefaults.buttonColors(containerColor = Color(p.color)),
                             modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)
-                        ) { Text(p.name, color = Color.White, fontWeight = FontWeight.SemiBold) }
+                        ) { Text(p.name, color = MaterialTheme.colorScheme.onSurface, fontWeight = FontWeight.SemiBold) }
                     }
                 }
             }
@@ -259,8 +259,8 @@ fun BallButtonRow(vm: GameViewModel, onLongPressRed: () -> Unit) {
                 shape = RoundedCornerShape(10.dp),
                 modifier = Modifier.weight(1f).height(60.dp)) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Icon(Icons.Default.Close, contentDescription = null, tint = Color.White, modifier = Modifier.size(16.dp))
-                    Text(LocalizationManager.str("sb.miss"), fontSize = 10.sp, color = Color.White, fontWeight = FontWeight.SemiBold)
+                    Icon(Icons.Default.Close, contentDescription = null, tint = MaterialTheme.colorScheme.onSurface, modifier = Modifier.size(16.dp))
+                    Text(LocalizationManager.str("sb.miss"), fontSize = 10.sp, color = MaterialTheme.colorScheme.onSurface, fontWeight = FontWeight.SemiBold)
                 }
             }
         }
@@ -283,10 +283,10 @@ fun RowScope.RedBallBtn(disabled: Boolean, onClick: () -> Unit, onLongClick: () 
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Box(modifier = Modifier.size(20.dp).clip(CircleShape).background(Color(0xFFDC143C)),
                 contentAlignment = Alignment.Center) {
-                Text("1", fontSize = 10.sp, color = Color.White, fontWeight = FontWeight.Bold)
+                Text("1", fontSize = 10.sp, color = MaterialTheme.colorScheme.onSurface, fontWeight = FontWeight.Bold)
             }
             Text(LocalizationManager.str("ball.red"), fontSize = 10.sp,
-                color = if (disabled) Color.White.copy(alpha = 0.2f) else Color.White)
+                color = if (disabled) MaterialTheme.colorScheme.onSurface.copy(alpha = 0.2f) else MaterialTheme.colorScheme.onSurface)
         }
     }
 }
@@ -306,11 +306,11 @@ fun RowScope.BallBtn(ball: SnookerBall, disabled: Boolean, onClick: () -> Unit) 
             Box(modifier = Modifier.size(20.dp).clip(CircleShape).background(Color(ball.hexColor)),
                 contentAlignment = Alignment.Center) {
                 Text("${ball.points}", fontSize = 10.sp,
-                    color = if (ball == SnookerBall.YELLOW) Color.Black else Color.White,
+                    color = if (ball == SnookerBall.YELLOW) Color.Black else MaterialTheme.colorScheme.onSurface,
                     fontWeight = FontWeight.Bold)
             }
             Text(ball.name, fontSize = 10.sp,
-                color = if (disabled) Color.White.copy(alpha = 0.2f) else Color.White)
+                color = if (disabled) MaterialTheme.colorScheme.onSurface.copy(alpha = 0.2f) else MaterialTheme.colorScheme.onSurface)
         }
     }
 }
@@ -326,7 +326,7 @@ fun PlayerCard(
 ) {
     Card(
         colors = CardDefaults.cardColors(
-            containerColor = if (isCurrent) Color(player.color).copy(alpha = 0.15f) else Color.White.copy(alpha = 0.04f)
+            containerColor = if (isCurrent) Color(player.color).copy(alpha = 0.15f) else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
         ),
         shape = RoundedCornerShape(14.dp),
         modifier = Modifier
@@ -336,15 +336,15 @@ fun PlayerCard(
     ) {
         Row(modifier = Modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text("$rank", fontSize = 12.sp, color = Color.White.copy(alpha = 0.6f), fontWeight = FontWeight.Bold)
+                Text("$rank", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f), fontWeight = FontWeight.Bold)
                 Box(modifier = Modifier.size(10.dp).clip(CircleShape).background(Color(player.color)))
             }
             Spacer(modifier = Modifier.width(16.dp))
             Column(modifier = Modifier.weight(1f)) {
-                Text(player.name, fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = Color.White)
+                Text(player.name, fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = MaterialTheme.colorScheme.onSurface)
                 Row {
                     if (player.highestBreak > 0)
-                        Text("Highest Break: ${player.highestBreak}", color = Color.White.copy(alpha = 0.4f), fontSize = 11.sp)
+                        Text("Highest Break: ${player.highestBreak}", color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f), fontSize = 11.sp)
                     if (topScore > player.score) {
                         Spacer(modifier = Modifier.width(8.dp))
                         Text("${LocalizationManager.str("sb.behind")}: ${topScore - player.score}${LocalizationManager.str("sb.behindPts")}",
@@ -367,14 +367,14 @@ fun InfoChip(label: String, value: String, color: Color) {
         modifier = Modifier.clip(RoundedCornerShape(8.dp)).background(color.copy(alpha = 0.15f)).padding(horizontal = 10.dp, vertical = 4.dp)) {
         Box(modifier = Modifier.size(10.dp).clip(CircleShape).background(color))
         Spacer(modifier = Modifier.width(4.dp))
-        Text("$label: $value", fontSize = 12.sp, color = Color.White.copy(alpha = 0.7f))
+        Text("$label: $value", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f))
     }
 }
 
 @Composable
 fun BottomChip(label: String, icon: androidx.compose.ui.graphics.vector.ImageVector, color: Color, enabled: Boolean, onClick: () -> Unit) {
     Button(onClick = onClick, enabled = enabled,
-        colors = ButtonDefaults.buttonColors(containerColor = Color.White.copy(alpha = 0.08f)),
+        colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)),
         shape = RoundedCornerShape(20.dp),
         contentPadding = PaddingValues(horizontal = 14.dp, vertical = 8.dp)) {
         Icon(icon, contentDescription = null, tint = color, modifier = Modifier.size(14.dp))

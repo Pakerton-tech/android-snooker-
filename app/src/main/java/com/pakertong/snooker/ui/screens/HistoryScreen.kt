@@ -43,7 +43,7 @@ fun HistoryScreen(matches: List<MatchRecord>, onDelete: (String) -> Unit, onDele
     }
 
     Scaffold(
-        containerColor = Color(0xFF1a1a2e)
+        containerColor = MaterialTheme.colorScheme.surface
     ) { padding ->
         Column(modifier = Modifier.fillMaxSize().padding(padding)) {
             // Header
@@ -54,7 +54,7 @@ fun HistoryScreen(matches: List<MatchRecord>, onDelete: (String) -> Unit, onDele
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Text(LocalizationManager.str("history.title"), fontSize = 24.sp, fontWeight = FontWeight.Bold, color = Color.White)
+                Text(LocalizationManager.str("history.title"), fontSize = 24.sp, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onSurface)
                 if (matches.isNotEmpty()) {
                     IconButton(onClick = { showDeleteAllConfirm = true }) {
                         Icon(Icons.Default.Delete, contentDescription = null, tint = Color.Red.copy(alpha = 0.7f))
@@ -97,9 +97,9 @@ fun HistoryScreen(matches: List<MatchRecord>, onDelete: (String) -> Unit, onDele
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
                         Icon(Icons.Default.History, contentDescription = null,
-                            tint = Color.White.copy(alpha = 0.2f), modifier = Modifier.size(64.dp))
+                            tint = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.2f), modifier = Modifier.size(64.dp))
                         Spacer(modifier = Modifier.height(16.dp))
-                        Text(LocalizationManager.str("history.empty"), color = Color.White.copy(alpha = 0.3f), fontSize = 16.sp)
+                        Text(LocalizationManager.str("history.empty"), color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.3f), fontSize = 16.sp)
                     }
                 }
             } else {
@@ -149,11 +149,11 @@ fun FilterChip(label: String, selected: Boolean, onClick: () -> Unit) {
     Box(
         modifier = Modifier
             .clip(RoundedCornerShape(50))
-            .background(if (selected) Color(0xFFFF4500) else Color.White.copy(alpha = 0.08f))
+            .background(if (selected) Color(0xFFFF4500) else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f))
             .clickable(onClick = onClick)
             .padding(horizontal = 14.dp, vertical = 8.dp)
     ) {
-        Text(label, color = Color.White, fontSize = 13.sp, fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal)
+        Text(label, color = MaterialTheme.colorScheme.onSurface, fontSize = 13.sp, fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal)
     }
 }
 
@@ -179,7 +179,7 @@ fun SwipeToDeleteItem(onDelete: () -> Unit, content: @Composable () -> Unit) {
                     .padding(horizontal = 20.dp),
                 contentAlignment = Alignment.CenterEnd
             ) {
-                Icon(Icons.Default.Delete, contentDescription = null, tint = Color.White)
+                Icon(Icons.Default.Delete, contentDescription = null, tint = MaterialTheme.colorScheme.onSurface)
             }
         },
         dismissContent = { content() }
@@ -192,7 +192,7 @@ fun MatchCard(match: MatchRecord, onClick: () -> Unit) {
     val durationStr = formatDuration(match.duration)
 
     Card(
-        colors = CardDefaults.cardColors(containerColor = Color.White.copy(alpha = 0.04f)),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f)),
         shape = RoundedCornerShape(12.dp),
         modifier = Modifier.fillMaxWidth().clickable(onClick = onClick)
     ) {
@@ -202,9 +202,9 @@ fun MatchCard(match: MatchRecord, onClick: () -> Unit) {
                     Text(match.winnerName, color = Color(0xFFFFD700),
                         fontWeight = FontWeight.Bold, fontSize = 17.sp)
                     Text(dateFormat.format(Date(match.date)),
-                        color = Color.White.copy(alpha = 0.4f), fontSize = 12.sp)
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f), fontSize = 12.sp)
                 }
-                Text(durationStr, color = Color.White.copy(alpha = 0.5f), fontSize = 13.sp)
+                Text(durationStr, color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f), fontSize = 13.sp)
             }
             Spacer(modifier = Modifier.height(8.dp))
             match.players.forEachIndexed { i, p ->
@@ -212,9 +212,9 @@ fun MatchCard(match: MatchRecord, onClick: () -> Unit) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Box(modifier = Modifier.size(8.dp).clip(CircleShape).background(Color(color[i % 4])))
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text(p.name, color = Color.White, fontWeight = FontWeight.Medium,
+                    Text(p.name, color = MaterialTheme.colorScheme.onSurface, fontWeight = FontWeight.Medium,
                         modifier = Modifier.weight(1f))
-                    Text("${p.score}", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 18.sp)
+                    Text("${p.score}", color = MaterialTheme.colorScheme.onSurface, fontWeight = FontWeight.Bold, fontSize = 18.sp)
                 }
                 if (i < match.players.lastIndex) Spacer(modifier = Modifier.height(4.dp))
             }
@@ -252,16 +252,16 @@ fun MatchDetailDialog(match: MatchRecord, onDismiss: () -> Unit, onDelete: () ->
 
                 // Date & duration
                 Text(dateFormat.format(Date(match.date)),
-                    color = Color.White.copy(alpha = 0.5f), fontSize = 13.sp)
+                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f), fontSize = 13.sp)
                 Text("用时: ${formatDuration(match.duration)}",
-                    color = Color.White.copy(alpha = 0.5f), fontSize = 13.sp)
+                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f), fontSize = 13.sp)
                 Spacer(modifier = Modifier.height(12.dp))
 
                 // Player scores
                 match.players.forEach { p ->
                     Row(verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
-                        Text(p.name, color = Color.White, modifier = Modifier.weight(1f))
+                        Text(p.name, color = MaterialTheme.colorScheme.onSurface, modifier = Modifier.weight(1f))
                         Text("${p.score}", color = Color(0xFFFF4500),
                             fontWeight = FontWeight.Bold, fontSize = 20.sp)
                     }
@@ -301,7 +301,7 @@ fun MatchDetailDialog(match: MatchRecord, onDismiss: () -> Unit, onDelete: () ->
                                 Text("+${event.points} - $ballName", color = Color.White.copy(alpha = 0.8f), fontSize = 12.sp,
                                     modifier = Modifier.weight(1f))
                                 Text(timeFormat.format(Date(event.timestamp)),
-                                    color = Color.White.copy(alpha = 0.4f), fontSize = 11.sp)
+                                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f), fontSize = 11.sp)
                             }
                         }
                     }
