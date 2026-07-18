@@ -156,6 +156,7 @@ class GameViewModel : ViewModel() {
         isFreeBallActive = false
         freeBallToggle = false
         matchStartTime = System.currentTimeMillis()
+        turnStartTime = System.currentTimeMillis()
     }
 
     fun score(ball: SnookerBall) {
