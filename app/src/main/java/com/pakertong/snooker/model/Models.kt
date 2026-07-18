@@ -8,7 +8,18 @@ enum class SnookerBall(val points: Int, val hexColor: Long) {
     BROWN(4, 0xFF8B4513),
     BLUE(5, 0xFF1E90FF),
     PINK(6, 0xFFFF69B4),
-    BLACK(7, 0xFF333333)
+    BLACK(7, 0xFF333333);
+
+    val locKey: String
+        get() = when (this) {
+            RED -> "ball.red"
+            YELLOW -> "ball.yellow"
+            GREEN -> "ball.green"
+            BROWN -> "ball.brown"
+            BLUE -> "ball.blue"
+            PINK -> "ball.pink"
+            BLACK -> "ball.black"
+        }
 }
 
 data class Player(

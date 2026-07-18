@@ -12,6 +12,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.automirrored.filled.Undo
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -109,7 +110,7 @@ fun ScoreboardScreen(vm: GameViewModel, onEndMatch: () -> Unit) {
                 Spacer(modifier = Modifier.height(12.dp))
 
                 Row(horizontalArrangement = Arrangement.SpaceEvenly, modifier = Modifier.fillMaxWidth()) {
-                    BottomChip(LocalizationManager.str("sb.undo"), Icons.Default.Undo, MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f), vm.hasUndo) { vm.undo() }
+                    BottomChip(LocalizationManager.str("sb.undo"), Icons.AutoMirrored.Filled.Undo, MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f), vm.hasUndo) { vm.undo() }
                     BottomChip(LocalizationManager.str("sb.foul"), Icons.Default.WarningAmber, Color(0xFFFF9800), true) { showFoulSheet = true }
                     BottomChip(LocalizationManager.str("sb.end"), Icons.Default.Flag, MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f), true) { showEndConfirm = true }
                 }
@@ -285,7 +286,7 @@ fun RowScope.RedBallBtn(disabled: Boolean, onClick: () -> Unit, onLongClick: () 
                 contentAlignment = Alignment.Center) {
                 Text("1", fontSize = 10.sp, color = MaterialTheme.colorScheme.onSurface, fontWeight = FontWeight.Bold)
             }
-            Text(LocalizationManager.str("ball.red"), fontSize = 10.sp,
+            Text(LocalizationManager.str(SnookerBall.RED.locKey), fontSize = 10.sp,
                 color = if (disabled) MaterialTheme.colorScheme.onSurface.copy(alpha = 0.2f) else MaterialTheme.colorScheme.onSurface)
         }
     }
@@ -309,7 +310,7 @@ fun RowScope.BallBtn(ball: SnookerBall, disabled: Boolean, onClick: () -> Unit) 
                     color = if (ball == SnookerBall.YELLOW) Color.Black else MaterialTheme.colorScheme.onSurface,
                     fontWeight = FontWeight.Bold)
             }
-            Text(ball.name, fontSize = 10.sp,
+            Text(LocalizationManager.str(ball.locKey), fontSize = 10.sp,
                 color = if (disabled) MaterialTheme.colorScheme.onSurface.copy(alpha = 0.2f) else MaterialTheme.colorScheme.onSurface)
         }
     }

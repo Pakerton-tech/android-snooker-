@@ -163,6 +163,47 @@ object LocalizationManager {
             AppLanguage.JA_JP to "続ける",
             AppLanguage.EN to "Continue"
         ),
+        // Ball names
+        "ball.red" to mapOf(
+            AppLanguage.ZH_CN to "红球",
+            AppLanguage.JA_JP to "赤ボール",
+            AppLanguage.EN to "Red"
+        ),
+        "ball.yellow" to mapOf(
+            AppLanguage.ZH_CN to "黄球",
+            AppLanguage.JA_JP to "黄ボール",
+            AppLanguage.EN to "Yellow"
+        ),
+        "ball.green" to mapOf(
+            AppLanguage.ZH_CN to "绿球",
+            AppLanguage.JA_JP to "緑ボール",
+            AppLanguage.EN to "Green"
+        ),
+        "ball.brown" to mapOf(
+            AppLanguage.ZH_CN to "棕球",
+            AppLanguage.JA_JP to "茶ボール",
+            AppLanguage.EN to "Brown"
+        ),
+        "ball.blue" to mapOf(
+            AppLanguage.ZH_CN to "蓝球",
+            AppLanguage.JA_JP to "青ボール",
+            AppLanguage.EN to "Blue"
+        ),
+        "ball.pink" to mapOf(
+            AppLanguage.ZH_CN to "粉球",
+            AppLanguage.JA_JP to "ピンクボール",
+            AppLanguage.EN to "Pink"
+        ),
+        "ball.black" to mapOf(
+            AppLanguage.ZH_CN to "黑球",
+            AppLanguage.JA_JP to "黒ボール",
+            AppLanguage.EN to "Black"
+        ),
+        "ball.foul" to mapOf(
+            AppLanguage.ZH_CN to "犯规",
+            AppLanguage.JA_JP to "ファウル",
+            AppLanguage.EN to "Foul"
+        ),
         // Foul Sheet
         "foul.title" to mapOf(
             AppLanguage.ZH_CN to "犯规罚分",
