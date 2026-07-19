@@ -39,7 +39,7 @@ fun SettingsScreen(onClearData: () -> Unit) {
         // Language section
         SectionTitle(LocalizationManager.str("settings.language"))
         Spacer(modifier = Modifier.height(8.dp))
-        LanguageOption(AppLanguage.SYSTEM, "跟随系统 (${detectSystemLang()})")
+        LanguageOption(AppLanguage.SYSTEM, "${LocalizationManager.str("settings.followSystem")} (${detectSystemLang()})")
         LanguageOption(AppLanguage.ZH_CN, "中文")
         LanguageOption(AppLanguage.JA_JP, "日本語")
         LanguageOption(AppLanguage.EN, "English")
