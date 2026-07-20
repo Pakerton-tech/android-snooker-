@@ -95,7 +95,7 @@ object LocalizationManager {
         ),
         "sb.miss" to mapOf(
             AppLanguage.ZH_CN to "未进球",
-            AppLanguage.JA_JP to "未入球",
+            AppLanguage.JA_JP to "ハズレ",
             AppLanguage.EN to "Miss"
         ),
         "sb.shooting" to mapOf(
@@ -166,37 +166,37 @@ object LocalizationManager {
         // Ball names
         "ball.red" to mapOf(
             AppLanguage.ZH_CN to "红球",
-            AppLanguage.JA_JP to "赤ボール",
+            AppLanguage.JA_JP to "レッド",
             AppLanguage.EN to "Red"
         ),
         "ball.yellow" to mapOf(
             AppLanguage.ZH_CN to "黄球",
-            AppLanguage.JA_JP to "黄ボール",
+            AppLanguage.JA_JP to "イエロー",
             AppLanguage.EN to "Yellow"
         ),
         "ball.green" to mapOf(
             AppLanguage.ZH_CN to "绿球",
-            AppLanguage.JA_JP to "緑ボール",
+            AppLanguage.JA_JP to "グリーン",
             AppLanguage.EN to "Green"
         ),
         "ball.brown" to mapOf(
             AppLanguage.ZH_CN to "棕球",
-            AppLanguage.JA_JP to "茶ボール",
+            AppLanguage.JA_JP to "ブラウン",
             AppLanguage.EN to "Brown"
         ),
         "ball.blue" to mapOf(
             AppLanguage.ZH_CN to "蓝球",
-            AppLanguage.JA_JP to "青ボール",
+            AppLanguage.JA_JP to "ブルー",
             AppLanguage.EN to "Blue"
         ),
         "ball.pink" to mapOf(
             AppLanguage.ZH_CN to "粉球",
-            AppLanguage.JA_JP to "ピンクボール",
+            AppLanguage.JA_JP to "ピンク",
             AppLanguage.EN to "Pink"
         ),
         "ball.black" to mapOf(
             AppLanguage.ZH_CN to "黑球",
-            AppLanguage.JA_JP to "黒ボール",
+            AppLanguage.JA_JP to "ブラック",
             AppLanguage.EN to "Black"
         ),
         "ball.foul" to mapOf(
