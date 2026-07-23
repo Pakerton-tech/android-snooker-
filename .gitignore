@@ -1,7 +1,18 @@
-.gradle/
-build/
-app/build/
-local.properties
 *.iml
-.idea/
+.gradle
+/local.properties
+/.idea
 .DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Release signing (DO NOT COMMIT)
+/release/snooker-release.keystore
+/release/*.aab
+/release/*.apk
+
+# Backup scripts
+backup.sh

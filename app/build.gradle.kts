@@ -12,7 +12,35 @@ android {
         minSdk = 26
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0"
+    }
+
+    signingConfigs {
+        create("release") {
+            storeFile = rootProject.file("release/snooker-release.keystore")
+            storePassword = rootProject.extra["keystorePass"] as String
+            keyAlias = rootProject.extra["keyAlias"] as String
+            keyPassword = rootProject.extra["keyPass"] as String
+            enableV1Signing = true
+            enableV2Signing = true
+        }
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+            signingConfig = signingConfigs.getByName("release")
+        }
+        debug {
+            applicationIdSuffix = ".debug"
+            versionNameSuffix = "-debug"
+            isDebuggable = true
+        }
     }
 
     buildFeatures {
@@ -30,6 +58,12 @@ android {
 
     kotlinOptions {
         jvmTarget = "17"
+    }
+
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
     }
 }
 

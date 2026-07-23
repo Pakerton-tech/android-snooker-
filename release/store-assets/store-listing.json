@@ -1,0 +1,10 @@
+{
+  "title": "Snooker Scorekeeper",
+  "shortDescription": "Simple, fast snooker scoring — fully offline.",
+  "fullDescription": "A clean, intuitive snooker scorekeeping app designed for real matches. No ads, no tracking, no internet required.\n\nFeatures:\n• Score tracking for up to 4 players\n• Automatic foul penalty calculation\n• Endgame scoring with re-spot black\n• Free ball support\n• Shot missed tracking with undo\n• Multiple reds scoring (long press)\n• Match history with player statistics\n• Highest break tracking per player\n• Timer display for match and turn duration\n• Google Sign-In support\n• Dark theme optimized for table-side use\n• Multi-language support\n• No ads, no data collection, no internet required\n\nPerfect for casual games, club matches, or practice sessions.",
+  "category": "Sports",
+  "tags": ["snooker", "scorekeeper", "sports", "billiards"],
+  "price": "Free",
+  "containsAds": false,
+  "contentRating": "Everyone"
+}

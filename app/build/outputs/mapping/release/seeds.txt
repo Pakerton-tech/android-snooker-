@@ -1,0 +1,1319 @@
+kotlinx.coroutines.internal.ExceptionSuccessfullyProcessed
+com.pakertong.snooker.model.Player$Companion
+kotlin.UninitializedPropertyAccessException
+androidx.compose.foundation.text.modifiers.SelectableTextAnnotatedStringElement
+androidx.compose.ui.focus.FocusRequesterElement
+com.pakertong.snooker.model.EndGameSnapshot
+kotlin.io.FileAlreadyExistsException
+kotlinx.coroutines.internal.DiagnosticCoroutineContextException
+kotlinx.coroutines.internal.UndeliveredElementException
+androidx.compose.foundation.FocusableElement
+androidx.core.app.RemoteActionCompatParcelizer
+com.pakertong.snooker.model.UndoAction$Miss
+kotlinx.coroutines.android.AndroidDispatcherFactory
+kotlinx.coroutines.channels.ClosedReceiveChannelException
+androidx.core.app.ComponentActivity
+com.pakertong.snooker.model.GameStore
+androidx.startup.InitializationProvider
+androidx.core.net.ParseException
+androidx.versionedparcelable.VersionedParcel$ParcelException
+kotlinx.coroutines.channels.ClosedSendChannelException
+androidx.startup.StartupException
+com.pakertong.snooker.model.Player
+kotlin.coroutines.jvm.internal.BaseContinuationImpl
+kotlin.io.AccessDeniedException
+androidx.compose.foundation.HoverableElement
+com.pakertong.snooker.model.ScoreEvent
+com.pakertong.snooker.model.UndoAction$Score
+androidx.compose.foundation.MagnifierElement
+androidx.core.graphics.drawable.IconCompat
+androidx.compose.ui.layout.LayoutElement
+androidx.lifecycle.ProcessLifecycleInitializer
+androidx.compose.foundation.BackgroundElement
+com.pakertong.snooker.model.AppLanguage
+androidx.compose.foundation.layout.PaddingElement
+androidx.lifecycle.SavedStateHandlesVM
+androidx.compose.foundation.layout.HorizontalAlignElement
+androidx.compose.foundation.FocusableKt$FocusableInNonTouchModeElement$1
+com.pakertong.snooker.model.PlayerSnapshot
+androidx.compose.ui.input.pointer.PointerHoverIconModifierElement
+kotlinx.coroutines.internal.StackTraceRecoveryKt
+androidx.compose.foundation.layout.VerticalAlignElement
+androidx.versionedparcelable.ParcelImpl
+androidx.compose.foundation.layout.PaddingValuesElement
+androidx.compose.ui.focus.FocusOwnerImpl$modifier$1
+androidx.compose.foundation.ScrollingLayoutElement
+androidx.lifecycle.LifecycleDestroyedException
+androidx.compose.ui.focus.FocusTargetNode$FocusTargetElement
+androidx.compose.ui.node.ForceUpdateElement
+kotlinx.coroutines.CompletionHandlerException
+androidx.compose.ui.focus.FocusChangedElement
+androidx.lifecycle.AndroidViewModel
+com.pakertong.snooker.model.SnookerBall$WhenMappings
+com.pakertong.snooker.model.GameStore$delete$1
+kotlinx.coroutines.JobCancellationException
+android.support.v4.graphics.drawable.IconCompatParcelizer
+androidx.compose.foundation.layout.OffsetPxElement
+androidx.compose.foundation.relocation.BringIntoViewRequesterElement
+androidx.core.os.OperationCanceledException
+androidx.compose.ui.draw.DrawBehindElement
+androidx.core.app.CoreComponentFactory
+com.pakertong.snooker.model.UndoAction$Foul
+kotlin.io.ReadAfterEOFException
+androidx.compose.foundation.layout.LayoutWeightElement
+kotlinx.coroutines.flow.internal.AbortFlowException
+androidx.compose.foundation.layout.OffsetElement
+androidx.profileinstaller.ProfileInstallerInitializer
+android.support.v4.app.RemoteActionCompatParcelizer
+androidx.compose.ui.layout.LayoutIdElement
+androidx.compose.ui.graphics.GraphicsLayerElement
+com.pakertong.snooker.model.SnookerBall
+androidx.annotation.Keep
+com.pakertong.snooker.model.LocalizationManager
+androidx.activity.ComponentActivity
+androidx.compose.ui.semantics.AppendedSemanticsElement
+androidx.compose.foundation.gestures.ScrollableElement
+androidx.compose.foundation.text.modifiers.TextAnnotatedStringElement
+androidx.emoji2.text.EmojiCompatInitializer
+androidx.compose.runtime.snapshots.SnapshotApplyConflictException
+androidx.compose.ui.platform.DragAndDropModifierOnDragListener$modifier$1
+com.pakertong.snooker.viewmodel.GameViewModel
+androidx.compose.ui.input.pointer.PointerEventTimeoutCancellationException
+androidx.compose.ui.semantics.EmptySemanticsElement
+androidx.profileinstaller.ProfileInstallReceiver
+kotlin.io.FileSystemException
+androidx.emoji2.text.flatbuffer.FlexBuffers$FlexBufferException
+kotlin.TypeCastException
+androidx.compose.foundation.gestures.DraggableElement
+androidx.compose.runtime.ComposeRuntimeError
+androidx.core.graphics.drawable.IconCompatParcelizer
+androidx.compose.ui.input.pointer.SuspendPointerInputElement
+androidx.compose.foundation.ClickableElement
+androidx.compose.foundation.gestures.GestureCancellationException
+com.pakertong.snooker.model.GameStore$load$$inlined$sortByDescending$1
+kotlin.NoWhenBranchMatchedException
+androidx.compose.foundation.layout.WrapContentElement
+kotlinx.coroutines.flow.internal.ChildCancelledException
+androidx.compose.foundation.BorderModifierNodeElement
+androidx.compose.foundation.layout.UnspecifiedConstraintsElement
+androidx.compose.foundation.layout.BoxChildDataElement
+androidx.compose.foundation.layout.FillElement
+androidx.versionedparcelable.CustomVersionedParcelable
+com.pakertong.snooker.model.AppLanguage$Companion
+androidx.compose.ui.graphics.BlockGraphicsLayerElement
+androidx.compose.ui.draw.DrawWithCacheElement
+kotlin.io.NoSuchFileException
+androidx.compose.ui.semantics.ClearAndSetSemanticsElement
+com.pakertong.snooker.model.MatchRecord
+androidx.core.app.RemoteActionCompat
+androidx.compose.ui.input.rotary.RotaryInputElement
+androidx.compose.ui.CompositionLocalMapInjectionElement
+androidx.compose.ui.draw.PainterElement
+com.pakertong.snooker.MainActivity
+androidx.compose.foundation.text.modifiers.TextStringSimpleElement
+com.pakertong.snooker.model.UndoAction
+androidx.compose.ui.input.key.KeyInputElement
+androidx.compose.ui.layout.OnGloballyPositionedElement
+androidx.compose.foundation.layout.SizeElement
+kotlinx.coroutines.TimeoutCancellationException
+kotlin.KotlinNothingValueException
+kotlin.KotlinNullPointerException
+androidx.compose.foundation.CombinedClickableElement
+androidx.compose.ui.draw.DrawWithContentElement
+androidx.compose.ui.res.ResourceResolutionException
+androidx.activity.ComponentActivity: androidx.lifecycle.ViewModelStore mViewModelStore
+kotlinx.coroutines.internal.LimitedDispatcher: int runningWorkers
+androidx.activity.ComponentActivity: androidx.activity.ComponentActivity$ReportFullyDrawnExecutor mReportFullyDrawnExecutor
+com.pakertong.snooker.model.EndGameSnapshot: boolean isColorPhase
+com.pakertong.snooker.model.LocalizationManager: androidx.compose.runtime.MutableState currentLanguage$delegate
+com.pakertong.snooker.model.EndGameSnapshot: int $stable
+kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _prev
+com.pakertong.snooker.model.PlayerSnapshot: java.lang.String name
+com.pakertong.snooker.model.GameStore$delete$1: java.lang.String $matchId
+kotlinx.coroutines.flow.StateFlowImpl: java.lang.Object _state
+androidx.activity.ComponentActivity: java.util.concurrent.atomic.AtomicInteger mNextLocalRequestCode
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_START
+kotlinx.coroutines.sync.SemaphoreImpl: int _availablePermits
+androidx.lifecycle.ViewModel: boolean mCleared
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.MutableState turnStartTime$delegate
+com.pakertong.snooker.model.SnookerBall: com.pakertong.snooker.model.SnookerBall BROWN
+com.pakertong.snooker.model.AppLanguage: com.pakertong.snooker.model.AppLanguage SYSTEM
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_STOP
+com.pakertong.snooker.model.SnookerBall: com.pakertong.snooker.model.SnookerBall BLUE
+com.pakertong.snooker.model.ScoreEvent: java.lang.String playerName
+com.pakertong.snooker.model.Player: com.pakertong.snooker.model.Player$Companion Companion
+com.pakertong.snooker.model.ScoreEvent: long timestamp
+kotlinx.coroutines.internal.ThreadSafeHeap: int _size
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] $VALUES
+com.pakertong.snooker.model.MatchRecord: java.util.List players
+androidx.compose.runtime.ParcelableSnapshotMutableState: android.os.Parcelable$Creator CREATOR
+com.pakertong.snooker.model.AppLanguage: com.pakertong.snooker.model.AppLanguage[] $VALUES
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _next
+kotlinx.coroutines.scheduling.CoroutineScheduler: int _isTerminated
+com.pakertong.snooker.viewmodel.GameViewModel: java.util.Set endgameColorsPotted
+com.pakertong.snooker.model.UndoAction$Score: int playerIdx
+kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _state
+androidx.compose.foundation.lazy.layout.DefaultLazyKey: android.os.Parcelable$Creator CREATOR
+com.pakertong.snooker.model.EndGameSnapshot: java.util.Set colorsPotted
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.MutableIntState redsRemaining$delegate
+com.pakertong.snooker.model.MatchRecord: long duration
+com.pakertong.snooker.model.LocalizationManager: com.pakertong.snooker.model.LocalizationManager INSTANCE
+com.pakertong.snooker.model.SnookerBall: com.pakertong.snooker.model.SnookerBall PINK
+androidx.activity.ComponentActivity: java.util.concurrent.CopyOnWriteArrayList mOnConfigurationChangedListeners
+androidx.activity.ComponentActivity: boolean mDispatchingOnPictureInPictureModeChanged
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _rootCause
+com.pakertong.snooker.model.LocalizationManager: int $stable
+com.pakertong.snooker.model.PlayerSnapshot: int $stable
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: androidx.lifecycle.ReportFragment$LifecycleCallbacks$Companion Companion
+com.pakertong.snooker.model.AppLanguage: com.pakertong.snooker.model.AppLanguage ZH_CN
+androidx.concurrent.futures.AbstractResolvableFuture: java.lang.Object value
+kotlinx.coroutines.sync.SemaphoreImpl: java.lang.Object tail
+kotlinx.coroutines.android.HandlerDispatcherKt: android.view.Choreographer choreographer
+com.pakertong.snooker.model.GameStore: android.content.Context context
+com.pakertong.snooker.MainActivity: int $stable
+androidx.activity.ComponentActivity: androidx.savedstate.SavedStateRegistryController mSavedStateRegistryController
+androidx.core.app.ComponentActivity: androidx.lifecycle.LifecycleRegistry mLifecycleRegistry
+com.pakertong.snooker.model.SnookerBall: com.pakertong.snooker.model.SnookerBall BLACK
+androidx.activity.ComponentActivity: androidx.activity.OnBackPressedDispatcher mOnBackPressedDispatcher
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.MutableState isReSpotBlack$delegate
+androidx.lifecycle.SavedStateHandlesVM: java.util.Map handles
+kotlinx.coroutines.android.HandlerContext: kotlinx.coroutines.android.HandlerContext _immediate
+com.pakertong.snooker.model.SnookerBall: com.pakertong.snooker.model.SnookerBall GREEN
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_CREATE
+com.pakertong.snooker.model.MatchRecord: java.lang.String winnerName
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.MutableState isColorPhase$delegate
+kotlinx.coroutines.internal.LockFreeTaskQueueCore: long _state
+com.pakertong.snooker.model.SnookerBall: long hexColor
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.sync.MutexImpl: java.lang.Object owner
+androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Listener listeners
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object closeHandler
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int indexInArray
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event$Companion Companion
+com.pakertong.snooker.model.SnookerBall: kotlin.enums.EnumEntries $ENTRIES
+com.pakertong.snooker.model.SnookerBall: com.pakertong.snooker.model.SnookerBall RED
+kotlinx.coroutines.DispatchedCoroutine: int _decision
+androidx.concurrent.futures.AbstractResolvableFuture$Waiter: java.lang.Thread thread
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: android.os.Parcelable$Creator CREATOR
+com.pakertong.snooker.model.Player: int colorIndex
+com.pakertong.snooker.model.Player: int $stable
+com.pakertong.snooker.model.MatchRecord: java.lang.String notes
+com.pakertong.snooker.model.Player: java.util.List playerColors
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.MutableState showReSpotDialog$delegate
+kotlin.jvm.internal.Lambda: int arity
+com.pakertong.snooker.model.UndoAction$Foul: com.pakertong.snooker.model.EndGameSnapshot snapshot
+com.pakertong.snooker.model.ScoreEvent: int points
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.snapshots.SnapshotStateList players
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _exceptionsHolder
+androidx.activity.ComponentActivity: java.lang.String ACTIVITY_RESULT_TAG
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_RESUME
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_DESTROY
+kotlinx.coroutines.JobSupport: java.lang.Object _parentHandle
+com.pakertong.snooker.model.EndGameSnapshot: int playerIndex
+kotlinx.coroutines.internal.LockFreeTaskQueue: java.lang.Object _cur
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: java.lang.Object nextParkedWorker
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.MutableState matchOver$delegate
+kotlinx.coroutines.scheduling.WorkQueue: java.lang.Object lastScheduledTask
+kotlinx.coroutines.scheduling.CoroutineScheduler: long parkedWorkersStack
+com.pakertong.snooker.model.SnookerBall$WhenMappings: int[] $EnumSwitchMapping$0
+com.pakertong.snooker.model.MatchRecord: java.lang.String id
+com.pakertong.snooker.model.UndoAction$Score: int redsChange
+com.pakertong.snooker.viewmodel.GameViewModel: java.util.List undoStack
+com.pakertong.snooker.model.PlayerSnapshot: int score
+com.pakertong.snooker.model.ScoreEvent: java.lang.String ballLocKey
+kotlinx.coroutines.scheduling.WorkQueue: int blockingTasksInBuffer
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.MutableIntState endGamePhase$delegate
+kotlin.coroutines.SafeContinuation: java.lang.Object result
+com.pakertong.snooker.model.MatchRecord: int $stable
+androidx.activity.ComponentActivity: androidx.activity.contextaware.ContextAwareHelper mContextAwareHelper
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _queue
+com.pakertong.snooker.model.AppLanguage: com.pakertong.snooker.model.AppLanguage$Companion Companion
+com.pakertong.snooker.viewmodel.GameViewModel: java.util.List endgameOrder
+kotlinx.coroutines.channels.BufferedChannel: long sendersAndCloseStatus
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: android.os.Parcelable$Creator CREATOR
+com.pakertong.snooker.model.SnookerBall: com.pakertong.snooker.model.SnookerBall YELLOW
+androidx.activity.ComponentActivity: androidx.activity.FullyDrawnReporter mFullyDrawnReporter
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.MutableIntState currentPlayerIdx$delegate
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: androidx.lifecycle.ProcessLifecycleOwner this$0
+com.pakertong.snooker.model.PlayerSnapshot: int colorIndex
+kotlinx.coroutines.internal.Segment: int cleanedAndPointers
+com.pakertong.snooker.model.EndGameSnapshot: int phase
+androidx.lifecycle.ViewModel: java.util.Map mBagOfTags
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_ANY
+com.pakertong.snooker.model.AppLanguage: java.lang.String code
+com.pakertong.snooker.model.Player: java.lang.String name
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _removedRef
+com.pakertong.snooker.model.Player: int currentBreak
+com.pakertong.snooker.model.MatchRecord: long date
+androidx.core.app.ComponentActivity: androidx.collection.SimpleArrayMap mExtraDataMap
+com.pakertong.snooker.model.UndoAction$Miss: int $stable
+kotlinx.coroutines.EventLoopImplBase: int _isCompleted
+androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Waiter waiters
+kotlinx.coroutines.JobSupport$Finishing: int _isCompleting
+kotlinx.coroutines.sync.SemaphoreImpl: long deqIdx
+com.pakertong.snooker.model.Player: java.lang.String id
+androidx.lifecycle.ViewModel: java.util.Set mCloseables
+com.pakertong.snooker.model.MatchRecord: java.util.List events
+com.pakertong.snooker.model.Player: int highestBreak
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int workerCtl
+com.pakertong.snooker.model.UndoAction$Miss: com.pakertong.snooker.model.EndGameSnapshot snapshot
+com.pakertong.snooker.model.EndGameSnapshot: boolean freeBallActive
+kotlinx.coroutines.DefaultExecutor: java.lang.Thread _thread
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.MutableState freeBallToggle$delegate
+kotlinx.coroutines.EventLoopImplBase$DelayedTask: java.lang.Object _heap
+androidx.activity.ComponentActivity: boolean mDispatchingOnMultiWindowModeChanged
+com.pakertong.snooker.model.UndoAction$Score: int $stable
+com.pakertong.snooker.viewmodel.GameViewModel: int initialRedCount
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object sendSegment
+com.pakertong.snooker.model.LocalizationManager: java.util.Map translations
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_PAUSE
+androidx.activity.ComponentActivity: java.util.concurrent.CopyOnWriteArrayList mOnTrimMemoryListeners
+kotlinx.coroutines.channels.BufferedChannel: long receivers
+com.pakertong.snooker.model.EndGameSnapshot: int redOffset
+com.pakertong.snooker.model.ScoreEvent: int $stable
+com.pakertong.snooker.model.AppLanguage: com.pakertong.snooker.model.AppLanguage JA_JP
+com.pakertong.snooker.model.AppLanguage: kotlin.enums.EnumEntries $ENTRIES
+androidx.versionedparcelable.ParcelImpl: android.os.Parcelable$Creator CREATOR
+androidx.activity.ComponentActivity: androidx.core.view.MenuHostHelper mMenuHostHelper
+androidx.activity.ComponentActivity: int mContentLayoutId
+kotlinx.coroutines.sync.SemaphoreImpl: long enqIdx
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.MutableIntState currentTab$delegate
+com.pakertong.snooker.model.GameStore: int $stable
+kotlinx.coroutines.channels.BufferedChannel: long completedExpandBuffersAndPauseFlag
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object bufferEndSegment
+kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _parentHandle
+kotlinx.coroutines.scheduling.WorkQueue: int consumerIndex
+com.pakertong.snooker.model.UndoAction$Foul: int redsChange
+com.pakertong.snooker.viewmodel.GameViewModel: java.util.Map endgameColorValues
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _delayed
+com.pakertong.snooker.model.AppLanguage: com.pakertong.snooker.model.AppLanguage EN
+kotlinx.coroutines.scheduling.CoroutineScheduler: long controlState
+com.pakertong.snooker.model.GameStore: java.util.List matches
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object _closeCause
+androidx.activity.ComponentActivity: java.util.concurrent.CopyOnWriteArrayList mOnMultiWindowModeChangedListeners
+kotlinx.coroutines.CancellableContinuationImpl: int _decisionAndIndex
+kotlinx.coroutines.JobSupport: java.lang.Object _state
+kotlinx.coroutines.CancelledContinuation: int _resumed
+kotlinx.coroutines.internal.LockFreeTaskQueueCore: java.lang.Object _next
+androidx.concurrent.futures.AbstractResolvableFuture$Waiter: androidx.concurrent.futures.AbstractResolvableFuture$Waiter next
+com.pakertong.snooker.model.UndoAction$Foul: int points
+androidx.activity.ComponentActivity: androidx.activity.result.ActivityResultRegistry mActivityResultRegistry
+kotlinx.coroutines.sync.SemaphoreImpl: java.lang.Object head
+kotlinx.coroutines.InvokeOnCancelling: int _invoked
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.MutableState matchStartTime$delegate
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _prev
+kotlinx.coroutines.internal.DispatchedContinuation: java.lang.Object _reusableCancellableContinuation
+androidx.activity.ComponentActivity: androidx.lifecycle.LifecycleRegistry mLifecycleRegistry
+com.pakertong.snooker.model.SnookerBall: com.pakertong.snooker.model.SnookerBall[] $VALUES
+com.pakertong.snooker.model.ScoreEvent: java.lang.String id
+androidx.lifecycle.AndroidViewModel: android.app.Application application
+com.pakertong.snooker.model.UndoAction$Score: int points
+kotlinx.coroutines.DefaultExecutor: int debugStatus
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.snapshots.SnapshotStateList events
+androidx.activity.result.ActivityResult: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.internal.ResizableAtomicArray: java.util.concurrent.atomic.AtomicReferenceArray array
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.MutableState recentScorePlayerId$delegate
+kotlinx.coroutines.android.AndroidExceptionPreHandler: java.lang.Object _preHandler
+kotlinx.coroutines.CompletedExceptionally: int _handled
+com.pakertong.snooker.model.SnookerBall: int points
+kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _next
+com.pakertong.snooker.model.UndoAction$Foul: int playerIdx
+androidx.activity.ComponentActivity: java.util.concurrent.CopyOnWriteArrayList mOnPictureInPictureModeChangedListeners
+kotlinx.coroutines.scheduling.WorkQueue: int producerIndex
+com.pakertong.snooker.model.UndoAction: int $stable
+com.pakertong.snooker.viewmodel.GameViewModel: int redOffset
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.MutableState isFreeBallActive$delegate
+kotlinx.coroutines.channels.BufferedChannel: long bufferEnd
+com.pakertong.snooker.model.Player: int score
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object receiveSegment
+kotlinx.coroutines.UndispatchedCoroutine: boolean threadLocalIsSet
+com.pakertong.snooker.viewmodel.GameViewModel: int $stable
+com.pakertong.snooker.model.ScoreEvent: boolean isFoul
+kotlinx.coroutines.flow.StateFlowSlot: java.lang.Object _state
+kotlinx.coroutines.internal.AtomicOp: java.lang.Object _consensus
+com.pakertong.snooker.model.UndoAction$Foul: int $stable
+androidx.activity.ComponentActivity: androidx.lifecycle.ViewModelProvider$Factory mDefaultFactory
+com.pakertong.snooker.model.PlayerSnapshot: int highestBreak
+androidx.activity.ComponentActivity: java.util.concurrent.CopyOnWriteArrayList mOnNewIntentListeners
+com.pakertong.snooker.model.UndoAction$Score: com.pakertong.snooker.model.EndGameSnapshot snapshot
+kotlin.SafePublicationLazyImpl: java.lang.Object _value
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: androidx.lifecycle.ProcessLifecycleOwner this$0
+kotlin.LazyThreadSafetyMode: kotlin.LazyThreadSafetyMode[] values()
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isToggle(android.view.autofill.AutofillValue)
+androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType[] values()
+androidx.compose.ui.platform.AndroidComposeViewTranslationCallbackS: void clearViewTranslationCallback(android.view.View)
+androidx.compose.ui.platform.actionmodecallback.MenuItemOption: androidx.compose.ui.platform.actionmodecallback.MenuItemOption valueOf(java.lang.String)
+androidx.activity.ComponentActivity: android.content.Context peekAvailableContext()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setStableInsets(androidx.core.graphics.Insets)
+androidx.activity.ComponentActivity: androidx.activity.result.ActivityResultLauncher registerForActivityResult(androidx.activity.result.contract.ActivityResultContract,androidx.activity.result.ActivityResultCallback)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.InputModeManager getInputModeManager()
+com.pakertong.snooker.model.SnookerBall: long getHexColor()
+androidx.compose.ui.window.PopupLayout: void getParams$ui_release$annotations()
+androidx.core.graphics.Insets$Api29Impl: android.graphics.Insets of(int,int,int,int)
+androidx.compose.ui.unit.LayoutDirection: androidx.compose.ui.unit.LayoutDirection valueOf(java.lang.String)
+com.pakertong.snooker.model.UndoAction$Foul: com.pakertong.snooker.model.EndGameSnapshot component4()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20(androidx.core.view.WindowInsetsCompat)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPaused(android.app.Activity)
+androidx.compose.ui.platform.TextToolbarStatus: androidx.compose.ui.platform.TextToolbarStatus valueOf(java.lang.String)
+com.pakertong.snooker.model.SnookerBall: int getPoints()
+com.pakertong.snooker.model.PlayerSnapshot: com.pakertong.snooker.model.PlayerSnapshot copy$default(com.pakertong.snooker.model.PlayerSnapshot,java.lang.String,int,int,int,int,java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.core.graphics.drawable.IconCompat$Api23Impl: android.net.Uri getUri(java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AccessibilityManager getAccessibilityManager()
+androidx.core.os.TraceCompat$Api18Impl: void beginSection(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.input.pointer.MotionEventHelper: long toRawOffset-dBAh8RU(android.view.MotionEvent,int)
+androidx.core.view.WindowCompat$Api16Impl: void setDecorFitsSystemWindows(android.view.Window,boolean)
+androidx.compose.foundation.text.KeyCommand: androidx.compose.foundation.text.KeyCommand valueOf(java.lang.String)
+androidx.activity.ComponentActivity: void reportFullyDrawn()
+androidx.compose.ui.platform.ComposeView: boolean getShouldCreateCompositionOnAttachedToWindow()
+com.pakertong.snooker.model.UndoAction$Score: int getPlayerIdx()
+com.pakertong.snooker.model.MatchRecord: java.util.List component4()
+androidx.core.view.ViewCompat$Api16Impl: int getMinimumHeight(android.view.View)
+androidx.profileinstaller.ProfileInstallerInitializer$Handler28Impl: android.os.Handler createAsync(android.os.Looper)
+com.pakertong.snooker.viewmodel.GameViewModel: boolean isGameActive()
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedFling(android.view.View,float,float,boolean)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl()
+androidx.compose.ui.window.PopupLayout: int getDisplayHeight()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemGestureInsets(androidx.core.graphics.Insets)
+androidx.compose.runtime.InvalidationResult: androidx.compose.runtime.InvalidationResult[] values()
+kotlinx.coroutines.android.AndroidDispatcherFactory: java.lang.String hintOnError()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api19Impl: androidx.core.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat createCollectionItemInfo(int,int,int,int,boolean)
+androidx.activity.Api34Impl: float progress(android.window.BackEvent)
+kotlin.TypeCastException: TypeCastException()
+androidx.compose.foundation.Api31Impl: float onPullDistance(android.widget.EdgeEffect,float,float)
+kotlinx.coroutines.internal.ExceptionSuccessfullyProcessed: ExceptionSuccessfullyProcessed()
+androidx.emoji2.text.EmojiExclusions$EmojiExclusions_Api34: java.util.Set getExclusions()
+com.pakertong.snooker.model.Player: java.lang.String component2()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.focus.FocusOwner getFocusOwner()
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState[] values()
+kotlin.NoWhenBranchMatchedException: NoWhenBranchMatchedException()
+androidx.core.graphics.drawable.IconCompat$Api23Impl: android.graphics.drawable.Drawable loadDrawable(android.graphics.drawable.Icon,android.content.Context)
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl28)
+com.pakertong.snooker.model.EndGameSnapshot: EndGameSnapshot()
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight[] values()
+androidx.compose.ui.platform.AccessibilityNodeInfoVerificationHelperMethods: void setAvailableExtraData(android.view.accessibility.AccessibilityNodeInfo,java.util.List)
+androidx.compose.material3.TabSlots: androidx.compose.material3.TabSlots valueOf(java.lang.String)
+androidx.compose.ui.platform.ViewLayer: long getOwnerViewId()
+androidx.core.view.WindowInsetsCompat$Impl20: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.semantics.SemanticsOwner getSemanticsOwner()
+com.pakertong.snooker.model.ScoreEvent: java.lang.String getBallLocKey()
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$TranslateStatus: androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$TranslateStatus[] values()
+com.pakertong.snooker.viewmodel.GameViewModel: void undo()
+androidx.activity.ComponentActivity: void addMenuProvider(androidx.core.view.MenuProvider,androidx.lifecycle.LifecycleOwner)
+androidx.activity.ComponentActivity: void removeOnContextAvailableListener(androidx.activity.contextaware.OnContextAvailableListener)
+androidx.compose.foundation.text.Handle: androidx.compose.foundation.text.Handle valueOf(java.lang.String)
+androidx.core.app.ComponentActivity: void putExtraData(androidx.core.app.ComponentActivity$ExtraData)
+com.pakertong.snooker.model.EndGameSnapshot: boolean component2()
+androidx.activity.ComponentActivity: void removeOnConfigurationChangedListener(androidx.core.util.Consumer)
+androidx.compose.ui.platform.AndroidComposeView: void set_viewTreeOwners(androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners)
+androidx.core.view.ViewCompat$Api21Impl: void setBackgroundTintList(android.view.View,android.content.res.ColorStateList)
+androidx.compose.ui.text.android.BoringLayoutFactory33: android.text.BoringLayout$Metrics isBoring(java.lang.CharSequence,android.text.TextPaint,android.text.TextDirectionHeuristic)
+androidx.core.view.ViewCompat$Api30Impl: int getImportantForContentCapture(android.view.View)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.LayoutNode getRoot()
+androidx.core.view.WindowInsetsCompat$Impl21: boolean isConsumed()
+com.pakertong.snooker.model.Player: int getScore()
+com.pakertong.snooker.model.Player$Companion: Player$Companion()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreDestroyed(android.app.Activity)
+androidx.core.text.ICUCompat$Api24Impl: android.icu.util.ULocale forLocale(java.util.Locale)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: ProcessLifecycleOwner$attach$1$onActivityPreCreated$1(androidx.lifecycle.ProcessLifecycleOwner)
+androidx.compose.ui.platform.actionmodecallback.MenuItemOption: androidx.compose.ui.platform.actionmodecallback.MenuItemOption[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setTappableElementInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.window.PopupLayout: kotlin.jvm.functions.Function2 getContent()
+com.pakertong.snooker.viewmodel.GameViewModel: void setRecentScorePlayerId(java.lang.String)
+androidx.activity.ComponentActivity: void onMultiWindowModeChanged(boolean,android.content.res.Configuration)
+androidx.compose.ui.platform.AndroidComposeView: boolean getHasPendingMeasureOrLayout()
+androidx.compose.material3.ScaffoldLayoutContent: androidx.compose.material3.ScaffoldLayoutContent[] values()
+androidx.core.view.WindowInsetsCompat$Impl29: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.platform.AndroidComposeView: long getMeasureIteration()
+androidx.lifecycle.ViewModel: void onCleared()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.layout.LayoutCoordinates getParentLayoutCoordinates()
+androidx.compose.ui.platform.AndroidComposeView: android.view.View findViewByAccessibilityIdTraversal(int)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: android.view.accessibility.AccessibilityNodeInfo$ExtraRenderingInfo getExtraRenderingInfo(android.view.accessibility.AccessibilityNodeInfo)
+androidx.core.graphics.drawable.IconCompat$Api26Impl: android.graphics.drawable.Drawable createAdaptiveIconDrawable(android.graphics.drawable.Drawable,android.graphics.drawable.Drawable)
+com.pakertong.snooker.model.ScoreEvent: com.pakertong.snooker.model.ScoreEvent copy(java.lang.String,java.lang.String,int,java.lang.String,long,boolean)
+androidx.compose.material3.TextFieldType: androidx.compose.material3.TextFieldType valueOf(java.lang.String)
+androidx.compose.ui.graphics.CanvasZHelper: void enableZ(android.graphics.Canvas,boolean)
+androidx.lifecycle.ProcessLifecycleOwner$Api29Impl: void registerActivityLifecycleCallbacks(android.app.Activity,android.app.Application$ActivityLifecycleCallbacks)
+com.pakertong.snooker.model.GameStore: void save(com.pakertong.snooker.model.MatchRecord)
+androidx.core.view.ViewCompat$Api21Impl: androidx.core.view.WindowInsetsCompat getRootWindowInsets(android.view.View)
+androidx.compose.foundation.text.HandleState: androidx.compose.foundation.text.HandleState valueOf(java.lang.String)
+androidx.compose.ui.text.android.StaticLayoutFactory33: boolean isFallbackLineSpacingEnabled(android.text.StaticLayout)
+androidx.activity.ComponentActivity: java.lang.Object getLastCustomNonConfigurationInstance()
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30(androidx.core.view.WindowInsetsCompat)
+androidx.profileinstaller.ProfileVerifier$Api33Impl: android.content.pm.PackageInfo getPackageInfo(android.content.pm.PackageManager,android.content.Context)
+com.pakertong.snooker.model.ScoreEvent: java.lang.String getId()
+androidx.compose.ui.platform.AbstractComposeView: void getDisposeViewCompositionStrategy$annotations()
+androidx.compose.ui.platform.ComposeView: void setContent(kotlin.jvm.functions.Function2)
+com.pakertong.snooker.viewmodel.GameViewModel: void setReSpotBlack(boolean)
+com.pakertong.snooker.model.MatchRecord: java.lang.String getNotes()
+com.pakertong.snooker.model.SnookerBall: com.pakertong.snooker.model.SnookerBall valueOf(java.lang.String)
+kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart[] values()
+androidx.core.view.ViewCompat$Api16Impl: boolean hasTransientState(android.view.View)
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.LayoutDirection getParentLayoutDirection()
+com.pakertong.snooker.model.EndGameSnapshot: boolean getFreeBallActive()
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isText(android.view.autofill.AutofillValue)
+kotlinx.coroutines.flow.SharingCommand: kotlinx.coroutines.flow.SharingCommand valueOf(java.lang.String)
+androidx.core.util.ObjectsCompat$Api19Impl: int hash(java.lang.Object[])
+com.pakertong.snooker.model.UndoAction$Score: int component1()
+androidx.activity.ComponentActivity: androidx.lifecycle.Lifecycle getLifecycle()
+com.pakertong.snooker.model.ScoreEvent: ScoreEvent(java.lang.String,java.lang.String,int,java.lang.String,long,boolean)
+com.pakertong.snooker.MainActivity: void onCreate(android.os.Bundle)
+androidx.compose.ui.platform.AbstractComposeView: void setShowLayoutBounds(boolean)
+com.pakertong.snooker.model.MatchRecord: java.lang.String component7()
+androidx.compose.ui.autofill.AutofillCallback: void register(androidx.compose.ui.autofill.AndroidAutofill)
+androidx.activity.ComponentActivity: ComponentActivity(int)
+androidx.compose.ui.focus.FocusStateImpl: androidx.compose.ui.focus.FocusStateImpl[] values()
+androidx.compose.ui.platform.ViewLayer: float getCameraDistancePx()
+androidx.core.graphics.drawable.IconCompat: IconCompat()
+androidx.core.view.ViewCompat$Api29Impl: java.util.List getSystemGestureExclusionRects(android.view.View)
+androidx.core.graphics.drawable.IconCompat$Api28Impl: java.lang.String getResPackage(java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners getViewTreeOwners()
+androidx.activity.ComponentActivity: void onBackPressed()
+com.pakertong.snooker.model.GameStore: java.io.File getFile()
+androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: android.view.WindowInsets createWindowInsetsInstance()
+kotlin.LazyThreadSafetyMode: kotlin.LazyThreadSafetyMode valueOf(java.lang.String)
+com.pakertong.snooker.model.AppLanguage$Companion: AppLanguage$Companion()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityResumed(android.app.Activity)
+com.pakertong.snooker.model.AppLanguage$Companion: com.pakertong.snooker.model.AppLanguage fromCode(java.lang.String)
+com.pakertong.snooker.model.MatchRecord: java.util.List getEvents()
+androidx.core.text.ICUCompat$Api24Impl: android.icu.util.ULocale addLikelySubtags(java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+androidx.core.graphics.drawable.IconCompat$Api28Impl: int getType(java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+com.pakertong.snooker.viewmodel.GameViewModel: boolean isReSpotBlack()
+androidx.core.view.ViewCompat$Api23Impl: void setScrollIndicators(android.view.View,int,int)
+com.pakertong.snooker.model.MatchRecord: com.pakertong.snooker.model.MatchRecord copy$default(com.pakertong.snooker.model.MatchRecord,java.lang.String,long,long,java.util.List,java.lang.String,java.util.List,java.lang.String,int,java.lang.Object)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: java.lang.String getCollectionItemRowTitle(java.lang.Object)
+androidx.activity.ComponentActivity: void addMenuProvider(androidx.core.view.MenuProvider)
+com.pakertong.snooker.viewmodel.GameViewModel: int getCurrentPlayerIdx()
+androidx.core.view.ViewCompat$Api16Impl: void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+com.pakertong.snooker.viewmodel.GameViewModel: int getTableRemaining()
+androidx.core.view.ViewCompat$Api16Impl: void removeOnGlobalLayoutListener(android.view.ViewTreeObserver,android.view.ViewTreeObserver$OnGlobalLayoutListener)
+androidx.compose.runtime.Recomposer$State: androidx.compose.runtime.Recomposer$State valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.AutofillTree getAutofillTree()
+androidx.lifecycle.LifecycleDestroyedException: LifecycleDestroyedException()
+com.pakertong.snooker.model.Player: java.lang.String getId()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.core.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.compose.ui.platform.ViewLayer: void setInvalidated(boolean)
+com.pakertong.snooker.model.EndGameSnapshot: java.util.Set getColorsPotted()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isRound()
+com.pakertong.snooker.viewmodel.GameViewModel: void setRedsRemaining(int)
+com.pakertong.snooker.model.PlayerSnapshot: java.lang.String toString()
+androidx.lifecycle.ViewModel: java.lang.Object setTagIfAbsent(java.lang.String,java.lang.Object)
+androidx.activity.ComponentActivity: void onCreate(android.os.Bundle)
+androidx.core.view.WindowInsetsCompat$Impl20: boolean equals(java.lang.Object)
+androidx.compose.ui.platform.ViewLayerVerificationHelper28: void setOutlineSpotShadowColor(android.view.View,int)
+com.pakertong.snooker.model.GameStore$delete$1: GameStore$delete$1(java.lang.String)
+com.pakertong.snooker.model.PlayerSnapshot: int component3()
+androidx.compose.ui.platform.TextToolbarStatus: androidx.compose.ui.platform.TextToolbarStatus[] values()
+androidx.core.app.ComponentActivity: boolean shouldDumpInternalState(java.lang.String[])
+androidx.compose.ui.text.android.StaticLayoutFactory28: void setUseLineSpacingFromFallbacks(android.text.StaticLayout$Builder,boolean)
+androidx.activity.ComponentActivity: java.lang.Object onRetainCustomNonConfigurationInstance()
+com.pakertong.snooker.viewmodel.GameViewModel: int getEndGamePhase()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isVisible(int)
+com.pakertong.snooker.model.UndoAction$Score: com.pakertong.snooker.model.UndoAction$Score copy(int,int,int,com.pakertong.snooker.model.EndGameSnapshot)
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.IntSize getPopupContentSize-bOM6tXw()
+com.pakertong.snooker.model.Player: int hashCode()
+androidx.activity.OnBackPressedDispatcher$Api34Impl: android.window.OnBackInvokedCallback createOnBackAnimationCallback(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0)
+androidx.compose.foundation.text.selection.HandleReferencePoint: androidx.compose.foundation.text.selection.HandleReferencePoint[] values()
+androidx.compose.ui.semantics.EmptySemanticsElement: EmptySemanticsElement()
+android.support.v4.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+androidx.core.view.ViewCompat$Api16Impl: void setImportantForAccessibility(android.view.View,int)
+androidx.compose.ui.platform.WrapperRenderNodeLayerHelperMethods: void onDescendantInvalidated(androidx.compose.ui.platform.AndroidComposeView)
+kotlin.collections.AbstractMutableList: AbstractMutableList()
+androidx.core.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.SoftwareKeyboardController getSoftwareKeyboardController()
+com.pakertong.snooker.model.Player: int getCurrentBreak()
+androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy: androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy[] values()
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl29)
+com.pakertong.snooker.model.UndoAction: UndoAction()
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax[] values()
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.core.app.NotificationManagerCompat$Api24Impl: int getImportance(android.app.NotificationManager)
+androidx.core.view.WindowInsetsCompat$Impl20: void copyRootViewBounds(android.view.View)
+androidx.compose.ui.node.LayoutNode$UsageByParent: androidx.compose.ui.node.LayoutNode$UsageByParent valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api21Impl: java.lang.String getTransitionName(android.view.View)
+androidx.compose.ui.autofill.AutofillApi26Helper: android.view.autofill.AutofillId getAutofillId(android.view.ViewStructure)
+androidx.compose.ui.platform.AbstractComposeView: void setParentCompositionContext(androidx.compose.runtime.CompositionContext)
+kotlinx.coroutines.android.AndroidDispatcherFactory: kotlinx.coroutines.MainCoroutineDispatcher createDispatcher(java.util.List)
+android.support.v4.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getStableInsets()
+com.pakertong.snooker.model.EndGameSnapshot: EndGameSnapshot(int,boolean,int,boolean,int,java.util.Set,int,kotlin.jvm.internal.DefaultConstructorMarker)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29()
+com.pakertong.snooker.model.ScoreEvent: com.pakertong.snooker.model.ScoreEvent copy$default(com.pakertong.snooker.model.ScoreEvent,java.lang.String,java.lang.String,int,java.lang.String,long,boolean,int,java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl20)
+com.pakertong.snooker.viewmodel.GameViewModel: void setTurnStartTime(long)
+androidx.core.view.WindowInsetsCompat$Impl21: void setStableInsets(androidx.core.graphics.Insets)
+com.pakertong.snooker.model.AppLanguage: AppLanguage(java.lang.String,int,java.lang.String)
+androidx.compose.ui.focus.FocusStateImpl: androidx.compose.ui.focus.FocusStateImpl valueOf(java.lang.String)
+androidx.compose.ui.window.PopupLayout: void setParentLayoutCoordinates(androidx.compose.ui.layout.LayoutCoordinates)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.Autofill getAutofill()
+com.pakertong.snooker.model.UndoAction$Score: int component2()
+androidx.activity.Api34Impl: android.window.BackEvent createOnBackEvent(float,float,float,int)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api30Impl: java.lang.Object createRangeInfo(int,float,float,float)
+com.pakertong.snooker.model.Player: void setCurrentBreak(int)
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setText(android.view.ViewStructure,java.lang.CharSequence)
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isDate(android.view.autofill.AutofillValue)
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.snapshots.SnapshotStateList getPlayers()
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setClassName(android.view.ViewStructure,java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getTappableElementInsets()
+kotlinx.coroutines.android.AndroidExceptionPreHandler: AndroidExceptionPreHandler()
+com.pakertong.snooker.model.UndoAction$Foul: com.pakertong.snooker.model.UndoAction$Foul copy(int,int,int,com.pakertong.snooker.model.EndGameSnapshot)
+com.pakertong.snooker.model.ScoreEvent: int component3()
+androidx.core.app.ComponentActivity: androidx.lifecycle.Lifecycle getLifecycle()
+androidx.compose.ui.text.input.CursorAnchorInfoApi34Helper: android.view.inputmethod.CursorAnchorInfo$Builder addVisibleLineBounds(android.view.inputmethod.CursorAnchorInfo$Builder,androidx.compose.ui.text.TextLayoutResult,androidx.compose.ui.geometry.Rect)
+com.pakertong.snooker.model.ScoreEvent: boolean equals(java.lang.Object)
+androidx.compose.ui.autofill.AutofillApi26Helper: void setAutofillHints(android.view.ViewStructure,java.lang.String[])
+com.pakertong.snooker.model.GameStore$delete$1: java.lang.Boolean invoke(com.pakertong.snooker.model.MatchRecord)
+androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction: androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeViewVerificationHelperMethodsN: void setPointerIcon(android.view.View,androidx.compose.ui.input.pointer.PointerIcon)
+androidx.activity.ComponentActivity: void removeOnPictureInPictureModeChangedListener(androidx.core.util.Consumer)
+com.pakertong.snooker.viewmodel.GameViewModel: int getRedsRemaining()
+androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)
+androidx.core.view.ViewCompat$Api20Impl: android.view.WindowInsets onApplyWindowInsets(android.view.View,android.view.WindowInsets)
+com.pakertong.snooker.viewmodel.GameViewModel: java.lang.String getRecentScorePlayerId()
+androidx.core.view.ViewCompat$Api29Impl: android.view.contentcapture.ContentCaptureSession getContentCaptureSession(android.view.View)
+androidx.core.view.ViewCompat$Api19Impl: void notifySubtreeAccessibilityStateChanged(android.view.ViewParent,android.view.View,android.view.View,int)
+androidx.compose.foundation.Api31Impl: android.widget.EdgeEffect create(android.content.Context,android.util.AttributeSet)
+com.pakertong.snooker.model.LocalizationManager: void setCurrentLanguage(com.pakertong.snooker.model.AppLanguage)
+androidx.compose.foundation.layout.Direction: androidx.compose.foundation.layout.Direction[] values()
+com.pakertong.snooker.model.UndoAction$Miss: int hashCode()
+androidx.compose.ui.layout.IntrinsicMinMax: androidx.compose.ui.layout.IntrinsicMinMax[] values()
+androidx.core.view.ViewCompat$Api28Impl: void setAutofillId(android.view.View,android.view.autofill.AutofillId)
+androidx.compose.ui.platform.AndroidComposeViewForceDarkModeQ: void disallowForceDark(android.view.View)
+com.pakertong.snooker.model.Player: java.lang.String getName()
+androidx.compose.ui.window.PopupLayout: boolean getCanCalculatePosition()
+androidx.compose.ui.platform.AbstractComposeView: void setViewCompositionStrategy(androidx.compose.ui.platform.ViewCompositionStrategy)
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl21)
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setContentDescription(android.view.ViewStructure,java.lang.CharSequence)
+androidx.compose.foundation.text.selection.HandleReferencePoint: androidx.compose.foundation.text.selection.HandleReferencePoint valueOf(java.lang.String)
+kotlin.KotlinNullPointerException: KotlinNullPointerException()
+androidx.core.view.WindowInsetsCompat$Impl: void copyRootViewBounds(android.view.View)
+com.pakertong.snooker.model.MatchRecord: java.lang.String getId()
+androidx.core.view.ViewConfigurationCompat$Api26Impl: float getScaledVerticalScrollFactor(android.view.ViewConfiguration)
+androidx.compose.ui.platform.ViewLayer: void setCameraDistancePx(float)
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+androidx.profileinstaller.ProfileInstallerInitializer$Choreographer16Impl: void postFrameCallback(java.lang.Runnable)
+androidx.core.view.WindowInsetsCompat$Impl28: int hashCode()
+com.pakertong.snooker.model.Player: void setHighestBreak(int)
+com.pakertong.snooker.model.PlayerSnapshot: java.lang.String getName()
+com.pakertong.snooker.viewmodel.GameViewModel: void setShowReSpotDialog(boolean)
+androidx.compose.ui.platform.ViewLayer: androidx.compose.ui.platform.DrawChildContainer getContainer()
+androidx.core.view.ViewCompat$Api29Impl: void setSystemGestureExclusionRects(android.view.View,java.util.List)
+com.pakertong.snooker.model.LocalizationManager: java.lang.String strf(java.lang.String,java.lang.Object[])
+com.pakertong.snooker.model.GameStore: int getCount()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getRootStableInsets()
+androidx.core.view.WindowInsetsCompat$TypeImpl30: int toPlatformType(int)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setMinDurationBetweenContentChangeMillis(android.view.accessibility.AccessibilityNodeInfo,long)
+androidx.compose.ui.window.PopupLayout: android.view.WindowManager$LayoutParams getParams$ui_release()
+androidx.activity.ComponentActivity$Api33Impl: android.window.OnBackInvokedDispatcher getOnBackInvokedDispatcher(android.app.Activity)
+androidx.core.app.ComponentActivity: boolean dispatchKeyEvent(android.view.KeyEvent)
+com.pakertong.snooker.model.MatchRecord: int getBestBreak()
+androidx.compose.ui.platform.AndroidComposeView: void setShowLayoutBounds(boolean)
+androidx.core.view.DisplayCutoutCompat$Api28Impl: int getSafeInsetTop(android.view.DisplayCutout)
+com.pakertong.snooker.model.UndoAction$Miss: com.pakertong.snooker.model.EndGameSnapshot component1()
+kotlin.jvm.internal.Lambda: int getArity()
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: void notifyViewsDisappeared(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,long[])
+com.pakertong.snooker.model.Player: int component3()
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.compose.ui.platform.RenderNodeVerificationHelper23: void destroyDisplayListData(android.view.RenderNode)
+androidx.lifecycle.LegacySavedStateHandleController$OnRecreation: LegacySavedStateHandleController$OnRecreation()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: void setTextSelectable(android.view.accessibility.AccessibilityNodeInfo,boolean)
+androidx.core.app.CoreComponentFactory: CoreComponentFactory()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.window.PopupPositionProvider getPositionProvider()
+kotlin.random.Random: Random()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int,boolean)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: ReportFragment$LifecycleCallbacks()
+androidx.activity.ComponentActivity: void removeOnTrimMemoryListener(androidx.core.util.Consumer)
+kotlin.jvm.internal.Lambda: java.lang.String toString()
+androidx.compose.ui.platform.AndroidComposeView: void setOnViewTreeOwnersAvailable(kotlin.jvm.functions.Function1)
+androidx.core.view.WindowInsetsCompat$Impl: WindowInsetsCompat$Impl(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+androidx.compose.material.DismissDirection: androidx.compose.material.DismissDirection valueOf(java.lang.String)
+com.pakertong.snooker.model.ScoreEvent: long getTimestamp()
+com.pakertong.snooker.viewmodel.GameViewModel: void setMatchStartTime(long)
+androidx.core.os.BundleApi21ImplKt: void putSizeF(android.os.Bundle,java.lang.String,android.util.SizeF)
+androidx.compose.ui.platform.AndroidComposeView: void getLastMatrixRecalculationAnimationTime$ui_release$annotations()
+androidx.compose.ui.platform.AndroidComposeViewStartDragAndDropN: boolean startDragAndDrop(android.view.View,androidx.compose.ui.draganddrop.DragAndDropTransferData,androidx.compose.ui.draganddrop.ComposeDragShadowBuilder)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+androidx.lifecycle.AndroidViewModel: android.app.Application getApplication()
+androidx.compose.ui.text.android.StaticLayoutFactoryDefault: android.text.StaticLayout create(androidx.compose.ui.text.android.StaticLayoutParams)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: android.view.ViewStructure newViewStructure(android.view.contentcapture.ContentCaptureSession,android.view.View)
+androidx.compose.ui.window.PopupLayout: void setContent(kotlin.jvm.functions.Function2)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api19Impl: java.lang.Object createRangeInfo(int,float,float,float)
+com.pakertong.snooker.model.MatchRecord: long getDuration()
+androidx.core.view.ViewCompat$Api19Impl: boolean isAttachedToWindow(android.view.View)
+com.pakertong.snooker.ui.theme.AppTheme: com.pakertong.snooker.ui.theme.AppTheme valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getTappableElementInsets()
+androidx.compose.ui.graphics.ColorSpaceVerificationHelper: android.graphics.ColorSpace androidColorSpace(androidx.compose.ui.graphics.colorspace.ColorSpace)
+androidx.activity.ComponentActivity: androidx.activity.FullyDrawnReporter getFullyDrawnReporter()
+androidx.core.view.DisplayCutoutCompat$Api28Impl: int getSafeInsetRight(android.view.DisplayCutout)
+androidx.compose.ui.text.android.StaticLayoutFactoryImpl: android.text.StaticLayout create(androidx.compose.ui.text.android.StaticLayoutParams)
+com.pakertong.snooker.model.MatchRecord: com.pakertong.snooker.model.MatchRecord copy(java.lang.String,long,long,java.util.List,java.lang.String,java.util.List,java.lang.String)
+androidx.core.view.ViewCompat$Api28Impl: void setAccessibilityPaneTitle(android.view.View,java.lang.CharSequence)
+com.pakertong.snooker.model.EndGameSnapshot: int hashCode()
+androidx.core.view.ViewCompat$Api21Impl: void setElevation(android.view.View,float)
+androidx.activity.Api34Impl: float touchY(android.window.BackEvent)
+androidx.core.view.ViewCompat$Api29Impl: void saveAttributeDataForStyleable(android.view.View,android.content.Context,int[],android.util.AttributeSet,android.content.res.TypedArray,int,int)
+androidx.activity.ComponentActivity: boolean onMenuItemSelected(int,android.view.MenuItem)
+androidx.core.view.ViewCompat$Api21Impl: void setTransitionName(android.view.View,java.lang.String)
+androidx.compose.ui.text.AnnotationType: androidx.compose.ui.text.AnnotationType valueOf(java.lang.String)
+androidx.compose.ui.platform.ViewLayerVerificationHelper28: void setOutlineAmbientShadowColor(android.view.View,int)
+androidx.compose.material.DismissValue: androidx.compose.material.DismissValue valueOf(java.lang.String)
+com.pakertong.snooker.model.PlayerSnapshot: int getScore()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.platform.AndroidComposeView: kotlin.jvm.functions.Function1 getConfigurationChangeObserver()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: void setUniqueId(android.view.accessibility.AccessibilityNodeInfo,java.lang.String)
+androidx.core.view.ViewCompat$Api28Impl: java.lang.Object requireViewById(android.view.View,int)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemWindowInsets()
+androidx.compose.ui.text.android.BoringLayoutFactoryDefault: android.text.BoringLayout$Metrics isBoring(java.lang.CharSequence,android.text.TextPaint,android.text.TextDirectionHeuristic)
+com.pakertong.snooker.model.UndoAction$Miss: com.pakertong.snooker.model.UndoAction$Miss copy$default(com.pakertong.snooker.model.UndoAction$Miss,com.pakertong.snooker.model.EndGameSnapshot,int,java.lang.Object)
+com.pakertong.snooker.viewmodel.GameViewModel: void foul(int,int,boolean)
+com.pakertong.snooker.model.GameStore$load$$inlined$sortByDescending$1: GameStore$load$$inlined$sortByDescending$1()
+androidx.compose.ui.platform.MotionEventVerifierApi29: boolean isValidMotionEvent(android.view.MotionEvent,int)
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isList(android.view.autofill.AutofillValue)
+com.pakertong.snooker.model.MatchRecord: int hashCode()
+com.pakertong.snooker.model.Player: com.pakertong.snooker.model.Player copy$default(com.pakertong.snooker.model.Player,java.lang.String,java.lang.String,int,int,int,int,int,java.lang.Object)
+androidx.compose.foundation.text.KeyCommand: androidx.compose.foundation.text.KeyCommand[] values()
+kotlin.KotlinNothingValueException: KotlinNothingValueException()
+androidx.activity.ComponentActivity: void addMenuProvider(androidx.core.view.MenuProvider,androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$State)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void getBoundsInWindow(android.view.accessibility.AccessibilityNodeInfo,android.graphics.Rect)
+androidx.lifecycle.SavedStateHandlesVM: SavedStateHandlesVM()
+com.pakertong.snooker.model.PlayerSnapshot: int hashCode()
+androidx.activity.ComponentActivity: android.os.Bundle lambda$new$1()
+androidx.compose.ui.platform.ViewLayerVerificationHelper31: void setRenderEffect(android.view.View,androidx.compose.ui.graphics.RenderEffect)
+androidx.compose.foundation.text.selection.CrossStatus: androidx.compose.foundation.text.selection.CrossStatus[] values()
+androidx.activity.ComponentActivity: void onPictureInPictureModeChanged(boolean,android.content.res.Configuration)
+androidx.compose.ui.input.pointer.PointerEventPass: androidx.compose.ui.input.pointer.PointerEventPass valueOf(java.lang.String)
+com.pakertong.snooker.viewmodel.GameViewModel: void setEndGamePhase(int)
+com.pakertong.snooker.model.EndGameSnapshot: EndGameSnapshot(int,boolean,int,boolean,int,java.util.Set)
+androidx.core.view.ViewCompat$Api19Impl: void setContentChangeTypes(android.view.accessibility.AccessibilityEvent,int)
+androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+com.pakertong.snooker.model.Player: int component5()
+com.pakertong.snooker.model.GameStore: void deleteAll()
+kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult[] values()
+androidx.core.util.ObjectsCompat$Api19Impl: boolean equals(java.lang.Object,java.lang.Object)
+androidx.lifecycle.ViewModel: void addCloseable(java.io.Closeable)
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: void setSpotShadowColor(android.view.RenderNode,int)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: boolean isTextSelectable(android.view.accessibility.AccessibilityNodeInfo)
+com.pakertong.snooker.model.MatchRecord: boolean equals(java.lang.Object)
+com.pakertong.snooker.viewmodel.GameViewModel: void missShot()
+androidx.activity.ComponentActivity: androidx.activity.OnBackPressedDispatcher access$100(androidx.activity.ComponentActivity)
+androidx.compose.foundation.gestures.GestureCancellationException: GestureCancellationException()
+com.pakertong.snooker.model.MatchRecord: MatchRecord(java.lang.String,long,long,java.util.List,java.lang.String,java.util.List,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker)
+androidx.activity.OnBackPressedDispatcher$Api33Impl: android.window.OnBackInvokedCallback createOnBackInvokedCallback(kotlin.jvm.functions.Function0)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: androidx.core.view.accessibility.AccessibilityNodeInfoCompat getChild(android.view.accessibility.AccessibilityNodeInfo,int,int)
+com.pakertong.snooker.model.UndoAction$Foul: com.pakertong.snooker.model.UndoAction$Foul copy$default(com.pakertong.snooker.model.UndoAction$Foul,int,int,int,com.pakertong.snooker.model.EndGameSnapshot,int,java.lang.Object)
+com.pakertong.snooker.viewmodel.GameViewModel: boolean isBallDisabled(com.pakertong.snooker.model.SnookerBall)
+android.support.v4.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.compose.ui.autofill.AutofillApi26Helper: void setAutofillId(android.view.ViewStructure,android.view.autofill.AutofillId,int)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityResumed(android.app.Activity)
+androidx.versionedparcelable.CustomVersionedParcelable: CustomVersionedParcelable()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.modifier.ModifierLocalManager getModifierLocalManager()
+com.pakertong.snooker.viewmodel.GameViewModel: boolean isEndgameComplete()
+androidx.compose.ui.text.android.StaticLayoutFactory23: android.text.StaticLayout create(androidx.compose.ui.text.android.StaticLayoutParams)
+com.pakertong.snooker.model.LocalizationManager: java.lang.String str(java.lang.String)
+com.pakertong.snooker.model.MatchRecord: java.lang.String component5()
+androidx.core.view.ViewCompat$Api19Impl: int getAccessibilityLiveRegion(android.view.View)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.layout.Placeable$PlacementScope getPlacementScope()
+com.pakertong.snooker.model.EndGameSnapshot: int getPlayerIndex()
+com.pakertong.snooker.model.ScoreEvent: java.lang.String toString()
+com.pakertong.snooker.viewmodel.GameViewModel: void selectPlayer(java.lang.String)
+com.pakertong.snooker.model.PlayerSnapshot: boolean equals(java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.activity.ComponentActivity: void setContentView(android.view.View,android.view.ViewGroup$LayoutParams)
+androidx.core.view.WindowInsetsCompat$Impl: int hashCode()
+androidx.core.graphics.drawable.IconCompat$Api28Impl: int getResId(java.lang.Object)
+androidx.compose.runtime.Recomposer$State: androidx.compose.runtime.Recomposer$State[] values()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: long getMinDurationBetweenContentChangeMillis(android.view.accessibility.AccessibilityNodeInfo)
+androidx.core.view.ViewCompat$Api28Impl: boolean isAccessibilityHeading(android.view.View)
+androidx.activity.ComponentActivity: androidx.lifecycle.ViewModelProvider$Factory getDefaultViewModelProviderFactory()
+androidx.core.view.ViewCompat$Api21Impl: float getElevation(android.view.View)
+androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: void setInsets(int,androidx.core.graphics.Insets)
+com.pakertong.snooker.viewmodel.GameViewModel: boolean isFreeBallActive()
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setDimens(android.view.ViewStructure,int,int,int,int,int,int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: androidx.core.view.WindowInsetsCompat build()
+com.pakertong.snooker.viewmodel.GameViewModel: void setMatchOver(boolean)
+com.pakertong.snooker.model.UndoAction$Foul: int component2()
+androidx.core.text.ICUCompat$Api24Impl: java.lang.String getScript(java.lang.Object)
+com.pakertong.snooker.model.UndoAction$Score: com.pakertong.snooker.model.EndGameSnapshot getSnapshot()
+androidx.core.view.ViewCompat$Api30Impl: void setImportantForContentCapture(android.view.View,int)
+com.pakertong.snooker.model.EndGameSnapshot: int component1()
+kotlin.time.DurationUnit: kotlin.time.DurationUnit[] values()
+androidx.compose.runtime.InvalidationResult: androidx.compose.runtime.InvalidationResult valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api21Impl: android.graphics.PorterDuff$Mode getBackgroundTintMode(android.view.View)
+androidx.compose.material.ripple.RippleHostView: void setRippleState(boolean)
+com.pakertong.snooker.viewmodel.GameViewModel: boolean getHasUndo()
+kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult valueOf(java.lang.String)
+androidx.compose.animation.core.RepeatMode: androidx.compose.animation.core.RepeatMode valueOf(java.lang.String)
+com.pakertong.snooker.model.PlayerSnapshot: com.pakertong.snooker.model.PlayerSnapshot copy(java.lang.String,int,int,int)
+com.pakertong.snooker.model.ScoreEvent: boolean component6()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.platform.AbstractComposeView getSubCompositionView()
+androidx.activity.ComponentActivity: void onNewIntent(android.content.Intent)
+androidx.compose.material3.tokens.ColorSchemeKeyTokens: androidx.compose.material3.tokens.ColorSchemeKeyTokens valueOf(java.lang.String)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: boolean hasRequestInitialAccessibilityFocus(android.view.accessibility.AccessibilityNodeInfo)
+androidx.activity.ComponentActivity: void removeMenuProvider(androidx.core.view.MenuProvider)
+androidx.core.view.ViewCompat$Api23Impl: androidx.core.view.WindowInsetsCompat getRootWindowInsets(android.view.View)
+com.pakertong.snooker.model.SnookerBall: java.lang.String getLocKey()
+com.pakertong.snooker.model.SnookerBall: kotlin.enums.EnumEntries getEntries()
+androidx.compose.ui.text.android.StaticLayoutFactory26: void setJustificationMode(android.text.StaticLayout$Builder,int)
+com.pakertong.snooker.viewmodel.GameViewModel: void scoreMultipleReds(int)
+com.pakertong.snooker.model.UndoAction$Score: int getRedsChange()
+com.pakertong.snooker.model.GameStore: void delete(java.lang.String)
+com.pakertong.snooker.model.ScoreEvent: int getPoints()
+androidx.core.view.ViewCompat$Api20Impl: android.view.WindowInsets dispatchApplyWindowInsets(android.view.View,android.view.WindowInsets)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getVisibleInsets(android.view.View)
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$ViewTranslationHelperMethodsS: void onVirtualViewTranslationResponses(androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat,android.util.LongSparseArray)
+androidx.compose.ui.window.SecureFlagPolicy: androidx.compose.ui.window.SecureFlagPolicy valueOf(java.lang.String)
+androidx.compose.foundation.FocusableKt$FocusableInNonTouchModeElement$1: FocusableKt$FocusableInNonTouchModeElement$1()
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemGestureInsets(androidx.core.graphics.Insets)
+androidx.core.view.ViewCompat$Api19Impl: boolean isLayoutDirectionResolved(android.view.View)
+androidx.compose.ui.window.PopupLayout: void setIsFocusable(boolean)
+androidx.core.view.ViewCompat$Api20Impl: void requestApplyInsets(android.view.View)
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: int getSpotShadowColor(android.view.RenderNode)
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.compose.ui.node.LayoutNode$UsageByParent: androidx.compose.ui.node.LayoutNode$UsageByParent[] values()
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+com.pakertong.snooker.viewmodel.GameViewModel: GameViewModel()
+androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl30)
+androidx.compose.ui.window.PopupLayout: void setLayoutDirection(int)
+androidx.compose.ui.text.platform.extensions.LocaleListHelperMethods: void setTextLocales(androidx.compose.ui.text.platform.AndroidTextPaint,androidx.compose.ui.text.intl.LocaleList)
+androidx.activity.ComponentActivity: void onMultiWindowModeChanged(boolean)
+androidx.activity.OnBackPressedDispatcher$Api33Impl: void unregisterOnBackInvokedCallback(java.lang.Object,java.lang.Object)
+androidx.compose.ui.layout.IntrinsicWidthHeight: androidx.compose.ui.layout.IntrinsicWidthHeight[] values()
+androidx.compose.material.ripple.RippleHostView: void setRippleState$lambda$2(androidx.compose.material.ripple.RippleHostView)
+android.support.v4.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.compose.ui.text.AnnotationType: androidx.compose.ui.text.AnnotationType[] values()
+androidx.core.view.ViewCompat$Api19Impl: boolean isLaidOut(android.view.View)
+androidx.compose.animation.core.MutatePriority: androidx.compose.animation.core.MutatePriority valueOf(java.lang.String)
+androidx.compose.material3.SliderComponents: androidx.compose.material3.SliderComponents[] values()
+com.pakertong.snooker.model.Player: int component4()
+androidx.compose.ui.graphics.WrapperVerificationHelperMethods: void setBlendMode-GB0RdKg(android.graphics.Paint,int)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api30Impl: java.lang.CharSequence getStateDescription(android.view.accessibility.AccessibilityNodeInfo)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setRequestInitialAccessibilityFocus(android.view.accessibility.AccessibilityNodeInfo,boolean)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.TextToolbar getTextToolbar()
+androidx.core.view.WindowInsetsCompat$Impl20: void setOverriddenInsets(androidx.core.graphics.Insets[])
+androidx.core.view.ViewCompat$Api28Impl: void setAccessibilityHeading(android.view.View,boolean)
+androidx.compose.ui.platform.AbstractComposeView: void setPreviousAttachedWindowToken(android.os.IBinder)
+com.pakertong.snooker.viewmodel.GameViewModel: int getCurrentTab()
+androidx.core.text.ICUCompat$Api21Impl: java.lang.String getScript(java.util.Locale)
+androidx.compose.ui.platform.ViewLayer: androidx.compose.ui.graphics.Path getManualClipPath()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.input.TextInputService getTextInputService()
+kotlinx.coroutines.android.AndroidDispatcherFactory: int getLoadPriority()
+androidx.compose.ui.window.PopupLayout: void setPopupContentSize-fhxjrPA(androidx.compose.ui.unit.IntSize)
+androidx.core.view.ViewCompat$Api16Impl: int getMinimumWidth(android.view.View)
+com.pakertong.snooker.model.UndoAction$Foul: int component1()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: ProcessLifecycleOwner$attach$1(androidx.lifecycle.ProcessLifecycleOwner)
+com.pakertong.snooker.model.EndGameSnapshot: int component5()
+kotlin.UninitializedPropertyAccessException: UninitializedPropertyAccessException()
+androidx.compose.ui.autofill.AutofillApi23Helper: int addChildCount(android.view.ViewStructure,int)
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedScroll(android.view.View,int,int,int,int,int[])
+androidx.compose.ui.state.ToggleableState: androidx.compose.ui.state.ToggleableState[] values()
+androidx.core.view.ViewCompat$Api21Impl: float getTranslationZ(android.view.View)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api19Impl: android.os.Bundle getExtras(android.view.accessibility.AccessibilityNodeInfo)
+androidx.activity.ComponentActivity: java.lang.Object onRetainNonConfigurationInstance()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.draganddrop.DragAndDropManager getDragAndDropManager()
+androidx.compose.foundation.MutatePriority: androidx.compose.foundation.MutatePriority[] values()
+com.pakertong.snooker.model.Player: java.lang.String component1()
+androidx.activity.ComponentActivity: androidx.activity.ComponentActivity$ReportFullyDrawnExecutor createFullyDrawnExecutor()
+androidx.core.view.ViewCompat$Api16Impl: boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+androidx.compose.ui.platform.AndroidComposeView: long getLastMatrixRecalculationAnimationTime$ui_release()
+androidx.compose.ui.text.style.ResolvedTextDirection: androidx.compose.ui.text.style.ResolvedTextDirection valueOf(java.lang.String)
+com.pakertong.snooker.viewmodel.GameViewModel: com.pakertong.snooker.model.SnookerBall getCurrentEndgameBall()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setInsets(int,androidx.core.graphics.Insets)
+com.pakertong.snooker.model.Player$Companion: java.util.List getPlayerColors()
+com.pakertong.snooker.model.Player$Companion: Player$Companion(kotlin.jvm.internal.DefaultConstructorMarker)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20()
+androidx.compose.ui.platform.AndroidComposeView: void setFontFamilyResolver(androidx.compose.ui.text.font.FontFamily$Resolver)
+com.pakertong.snooker.model.ScoreEvent: java.lang.String component1()
+androidx.core.view.AccessibilityDelegateCompat$Api16Impl: boolean performAccessibilityAction(android.view.View$AccessibilityDelegate,android.view.View,int,android.os.Bundle)
+androidx.compose.ui.state.ToggleableState: androidx.compose.ui.state.ToggleableState valueOf(java.lang.String)
+androidx.compose.ui.platform.ViewLayer: androidx.compose.ui.platform.AndroidComposeView getOwnerView()
+androidx.activity.ComponentActivity: void ensureViewModelStore()
+androidx.core.view.ViewCompat$Api23Impl: int getScrollIndicators(android.view.View)
+androidx.compose.foundation.MutatePriority: androidx.compose.foundation.MutatePriority valueOf(java.lang.String)
+com.pakertong.snooker.viewmodel.GameViewModel: void restoreSnapshot(com.pakertong.snooker.model.EndGameSnapshot)
+com.pakertong.snooker.viewmodel.GameViewModel: void startReSpotBlack(int)
+androidx.core.view.DisplayCutoutCompat$Api28Impl: android.view.DisplayCutout createDisplayCutout(android.graphics.Rect,java.util.List)
+androidx.compose.foundation.text.selection.SelectionHandleAnchor: androidx.compose.foundation.text.selection.SelectionHandleAnchor[] values()
+androidx.compose.ui.platform.ViewLayer$UniqueDrawingIdApi29: long getUniqueDrawingId(android.view.View)
+androidx.compose.ui.platform.ViewLayer: long getLayerId()
+androidx.core.view.ViewCompat$Api30Impl: boolean isImportantForContentCapture(android.view.View)
+androidx.compose.ui.platform.AbstractComposeView: void getShowLayoutBounds$annotations()
+com.pakertong.snooker.viewmodel.GameViewModel: void checkMatchEnd()
+androidx.compose.ui.platform.ComposeView: java.lang.CharSequence getAccessibilityClassName()
+androidx.activity.ComponentActivity: androidx.activity.OnBackPressedDispatcher getOnBackPressedDispatcher()
+androidx.core.view.ViewCompat$Api23Impl: void setScrollIndicators(android.view.View,int)
+androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction: androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction[] values()
+androidx.core.view.WindowInsetsCompat$Impl20: void loadReflectionField()
+androidx.compose.material3.tokens.TypographyKeyTokens: androidx.compose.material3.tokens.TypographyKeyTokens[] values()
+androidx.compose.ui.platform.RenderNodeVerificationHelper24: void discardDisplayList(android.view.RenderNode)
+androidx.compose.ui.window.PopupLayout: void setClippingEnabled(boolean)
+com.pakertong.snooker.model.Player: com.pakertong.snooker.model.Player copy(java.lang.String,java.lang.String,int,int,int,int)
+com.pakertong.snooker.model.SnookerBall: com.pakertong.snooker.model.SnookerBall[] $values()
+com.pakertong.snooker.viewmodel.GameViewModel: void resetGame()
+androidx.core.view.ViewCompat$Api16Impl: void setBackground(android.view.View,android.graphics.drawable.Drawable)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStopped(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.platform.AndroidComposeViewVerificationHelperMethodsO: void focusable(android.view.View,int,boolean)
+com.pakertong.snooker.model.MatchRecord: java.lang.String component1()
+androidx.compose.ui.platform.AbstractComposeView: void setTransitionGroup(boolean)
+androidx.compose.material3.TextFieldType: androidx.compose.material3.TextFieldType[] values()
+androidx.core.view.DisplayCutoutCompat$Api30Impl: android.graphics.Insets getWaterfallInsets(android.view.DisplayCutout)
+androidx.core.view.ViewCompat$Api21Impl: void setNestedScrollingEnabled(android.view.View,boolean)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreStopped(android.app.Activity)
+androidx.core.graphics.drawable.IconCompat$Api28Impl: android.net.Uri getUri(java.lang.Object)
+androidx.activity.ComponentActivity: androidx.lifecycle.viewmodel.CreationExtras getDefaultViewModelCreationExtras()
+androidx.core.view.ViewCompat$Api21Impl$1: android.view.WindowInsets onApplyWindowInsets(android.view.View,android.view.WindowInsets)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidAccessibilityManager getAccessibilityManager()
+androidx.compose.ui.platform.RenderNodeApi29VerificationHelper: void setRenderEffect(android.graphics.RenderNode,androidx.compose.ui.graphics.RenderEffect)
+com.pakertong.snooker.model.AppLanguage: com.pakertong.snooker.model.AppLanguage[] values()
+androidx.core.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.compose.ui.unit.LayoutDirection: androidx.compose.ui.unit.LayoutDirection[] values()
+androidx.core.view.ViewCompat$Api16Impl: void setHasTransientState(android.view.View,boolean)
+androidx.startup.InitializationProvider: InitializationProvider()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.activity.ComponentActivity: void onConfigurationChanged(android.content.res.Configuration)
+androidx.compose.ui.platform.AbstractComposeView: boolean getShouldCreateCompositionOnAttachedToWindow()
+com.pakertong.snooker.viewmodel.GameViewModel: boolean getFreeBallToggle()
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidViewsHandler: java.util.HashMap getLayoutNodeToHolder()
+com.pakertong.snooker.ui.theme.AppTheme: com.pakertong.snooker.ui.theme.AppTheme[] values()
+androidx.compose.ui.autofill.AutofillType: androidx.compose.ui.autofill.AutofillType valueOf(java.lang.String)
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: int getAmbientShadowColor(android.view.RenderNode)
+androidx.core.view.WindowInsetsCompat$Impl: void setRootViewData(androidx.core.graphics.Insets)
+androidx.core.view.ViewCompat$Api28Impl: java.lang.CharSequence getAccessibilityPaneTitle(android.view.View)
+com.pakertong.snooker.model.AppLanguage$Companion: AppLanguage$Companion(kotlin.jvm.internal.DefaultConstructorMarker)
+androidx.compose.ui.focus.CustomDestinationResult: androidx.compose.ui.focus.CustomDestinationResult[] values()
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api23Impl: android.os.Bundle getExtras(android.view.ViewStructure)
+androidx.compose.material3.tokens.ShapeKeyTokens: androidx.compose.material3.tokens.ShapeKeyTokens[] values()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostStarted(android.app.Activity)
+kotlin.time.DurationUnit: kotlin.time.DurationUnit valueOf(java.lang.String)
+androidx.compose.animation.core.RepeatMode: androidx.compose.animation.core.RepeatMode[] values()
+androidx.compose.ui.platform.TextToolbarHelperMethods: void invalidateContentRect(android.view.ActionMode)
+androidx.lifecycle.ReportFragment: ReportFragment()
+com.pakertong.snooker.viewmodel.GameViewModel: boolean getMatchOver()
+androidx.activity.ComponentActivity: boolean onPreparePanel(int,android.view.View,android.view.Menu)
+androidx.compose.ui.platform.DrawChildContainer: int getChildCount()
+androidx.activity.ComponentActivity: void setContentView(android.view.View)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: boolean isAccessibilityDataSensitive(android.view.accessibility.AccessibilityNodeInfo)
+com.pakertong.snooker.model.UndoAction$Foul: UndoAction$Foul(int,int,int,com.pakertong.snooker.model.EndGameSnapshot,int,kotlin.jvm.internal.DefaultConstructorMarker)
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.graphics.Insets getStableInsets()
+androidx.core.view.ViewCompat$Api16Impl: boolean hasOverlappingRendering(android.view.View)
+androidx.compose.ui.autofill.AutofillApi23Helper: android.view.ViewStructure newChild(android.view.ViewStructure,int)
+com.pakertong.snooker.viewmodel.GameViewModel: void setColorPhase(boolean)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStarted(android.app.Activity)
+com.pakertong.snooker.model.UndoAction$Foul: UndoAction$Foul(int,int,int,com.pakertong.snooker.model.EndGameSnapshot)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: java.lang.String getUniqueId(android.view.accessibility.AccessibilityNodeInfo)
+androidx.core.view.ViewCompat$Api16Impl: void postInvalidateOnAnimation(android.view.View)
+com.pakertong.snooker.viewmodel.GameViewModel: boolean getRedsDone()
+com.pakertong.snooker.model.EndGameSnapshot: int getPhase()
+androidx.core.view.ViewCompat$Api21Impl: boolean startNestedScroll(android.view.View,int)
+androidx.core.view.ViewCompat$Api28Impl: boolean isScreenReaderFocusable(android.view.View)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: void notifyViewTextChanged(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,java.lang.CharSequence)
+androidx.compose.foundation.layout.SizeMode: androidx.compose.foundation.layout.SizeMode[] values()
+com.pakertong.snooker.model.PlayerSnapshot: int getColorIndex()
+kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getSystemGestureInsets()
+androidx.core.view.ViewCompat$Api29Impl: void setContentCaptureSession(android.view.View,android.view.contentcapture.ContentCaptureSession)
+androidx.core.app.ComponentActivity: boolean shouldSkipDump(java.lang.String[])
+com.pakertong.snooker.viewmodel.GameViewModel: void score(com.pakertong.snooker.model.SnookerBall)
+androidx.profileinstaller.ProfileInstallerInitializer: ProfileInstallerInitializer()
+androidx.compose.ui.window.PopupLayout: void setPositionProvider(androidx.compose.ui.window.PopupPositionProvider)
+androidx.activity.ComponentActivity: void initializeViewTreeOwners()
+androidx.compose.ui.input.pointer.PointerEventPass: androidx.compose.ui.input.pointer.PointerEventPass[] values()
+androidx.activity.ComponentActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setContainerTitle(android.view.accessibility.AccessibilityNodeInfo,java.lang.CharSequence)
+androidx.compose.ui.platform.AbstractComposeView: void setParentContext(androidx.compose.runtime.CompositionContext)
+androidx.compose.ui.focus.FocusTargetNode$FocusTargetElement: FocusTargetNode$FocusTargetElement()
+androidx.core.view.AccessibilityDelegateCompat$Api16Impl: android.view.accessibility.AccessibilityNodeProvider getAccessibilityNodeProvider(android.view.View$AccessibilityDelegate,android.view.View)
+androidx.core.view.ViewCompat$Api21Impl: boolean hasNestedScrollingParent(android.view.View)
+com.pakertong.snooker.model.Player: long getColor()
+androidx.compose.ui.platform.coreshims.ViewCompatShims$Api26Impl: android.view.autofill.AutofillId getAutofillId(android.view.View)
+androidx.activity.ComponentActivity: androidx.lifecycle.ViewModelStore getViewModelStore()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemGestureInsets()
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$TranslateStatus: androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$TranslateStatus valueOf(java.lang.String)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: void notifyViewAppeared(android.view.contentcapture.ContentCaptureSession,android.view.ViewStructure)
+androidx.core.view.ViewCompat$Api16Impl: void postOnAnimation(android.view.View,java.lang.Runnable)
+com.pakertong.snooker.model.MatchRecord: java.lang.String getWinnerName()
+androidx.core.view.ViewCompat$Api21Impl: void setZ(android.view.View,float)
+androidx.core.graphics.drawable.IconCompat$Api26Impl: android.graphics.drawable.Icon createWithAdaptiveBitmap(android.graphics.Bitmap)
+com.pakertong.snooker.model.ScoreEvent: ScoreEvent(java.lang.String,java.lang.String,int,java.lang.String,long,boolean,int,kotlin.jvm.internal.DefaultConstructorMarker)
+androidx.activity.ComponentActivity: void addOnMultiWindowModeChangedListener(androidx.core.util.Consumer)
+com.pakertong.snooker.model.UndoAction$Score: UndoAction$Score(int,int,int,com.pakertong.snooker.model.EndGameSnapshot,int,kotlin.jvm.internal.DefaultConstructorMarker)
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isTypeVisible(int)
+androidx.activity.ComponentActivity: void addOnContextAvailableListener(androidx.activity.contextaware.OnContextAvailableListener)
+androidx.core.app.ComponentActivity: boolean superDispatchKeyEvent(android.view.KeyEvent)
+androidx.core.provider.FontProvider$Api16Impl: android.database.Cursor query(android.content.ContentResolver,android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.Object)
+androidx.compose.foundation.text.Handle: androidx.compose.foundation.text.Handle[] values()
+androidx.compose.foundation.text.HandleState: androidx.compose.foundation.text.HandleState[] values()
+androidx.compose.ui.platform.AndroidComposeView: void setLastMatrixRecalculationAnimationTime$ui_release(long)
+com.pakertong.snooker.model.UndoAction$Score: UndoAction$Score(int,int,int,com.pakertong.snooker.model.EndGameSnapshot)
+com.pakertong.snooker.model.MatchRecord: long component2()
+com.pakertong.snooker.model.ScoreEvent: java.lang.String component4()
+androidx.compose.ui.platform.ViewLayerContainer: void dispatchGetDisplayList()
+com.pakertong.snooker.model.UndoAction$Foul: int getRedsChange()
+androidx.compose.foundation.Api31Impl: float getDistance(android.widget.EdgeEffect)
+androidx.core.view.ViewCompat$Api21Impl: androidx.core.view.WindowInsetsCompat computeSystemWindowInsets(android.view.View,androidx.core.view.WindowInsetsCompat,android.graphics.Rect)
+com.pakertong.snooker.model.UndoAction$Foul: int hashCode()
+androidx.compose.ui.window.PopupLayout: int getDisplayWidth()
+androidx.compose.ui.autofill.AutofillType: androidx.compose.ui.autofill.AutofillType[] values()
+androidx.core.view.WindowInsetsCompat$Impl: boolean isRound()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners get_viewTreeOwners()
+androidx.compose.material3.SliderComponents: androidx.compose.material3.SliderComponents valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.ClipboardManager getClipboardManager()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.ViewConfiguration getViewConfiguration()
+com.pakertong.snooker.model.UndoAction$Foul: com.pakertong.snooker.model.EndGameSnapshot getSnapshot()
+androidx.compose.ui.platform.AbstractComposeView: boolean getShowLayoutBounds()
+androidx.core.view.ViewCompat$Api28Impl: void addOnUnhandledKeyEventListener(android.view.View,androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerCompat)
+com.pakertong.snooker.model.EndGameSnapshot: boolean component4()
+com.pakertong.snooker.model.MatchRecord: java.util.List component6()
+com.pakertong.snooker.model.AppLanguage: java.lang.String getCode()
+androidx.core.app.ComponentActivity: androidx.core.app.ComponentActivity$ExtraData getExtraData(java.lang.Class)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsets(int)
+androidx.compose.ui.platform.AndroidComposeView: kotlin.coroutines.CoroutineContext getCoroutineContext()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getSystemWindowInsets()
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: LifecycleDispatcher$DispatcherActivityCallback()
+com.pakertong.snooker.model.ScoreEvent: boolean isFoul()
+com.pakertong.snooker.model.UndoAction$Score: boolean equals(java.lang.Object)
+com.pakertong.snooker.model.Player: Player(java.lang.String,java.lang.String,int,int,int,int)
+androidx.compose.material3.InputPhase: androidx.compose.material3.InputPhase[] values()
+androidx.core.view.WindowInsetsCompat$Impl: boolean equals(java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.OwnerSnapshotObserver getSnapshotObserver()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.pointer.PointerIconService getPointerIconService()
+com.pakertong.snooker.model.Player: Player(java.lang.String,java.lang.String,int,int,int,int,int,kotlin.jvm.internal.DefaultConstructorMarker)
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons valueOf(java.lang.String)
+com.pakertong.snooker.MainActivity: MainActivity()
+androidx.compose.ui.autofill.AutofillApi26Helper: java.lang.CharSequence textValue(android.view.autofill.AutofillValue)
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$Api24Impl: void addSetProgressAction(androidx.core.view.accessibility.AccessibilityNodeInfoCompat,androidx.compose.ui.semantics.SemanticsNode)
+com.pakertong.snooker.model.UndoAction$Score: int hashCode()
+com.pakertong.snooker.model.GameStore: void persist()
+androidx.core.view.ViewCompat$Api21Impl: void setBackgroundTintMode(android.view.View,android.graphics.PorterDuff$Mode)
+androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsets(int)
+androidx.compose.ui.graphics.Api26Bitmap: android.graphics.Bitmap createBitmap-x__-hDU$ui_graphics_release(int,int,int,boolean,androidx.compose.ui.graphics.colorspace.ColorSpace)
+com.pakertong.snooker.viewmodel.GameViewModel: void setFreeBallActive(boolean)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons[] values()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+androidx.compose.material3.tokens.TypographyKeyTokens: androidx.compose.material3.tokens.TypographyKeyTokens valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidClipboardManager getClipboardManager()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.hapticfeedback.HapticFeedback getHapticFeedBack()
+androidx.core.os.OperationCanceledException: OperationCanceledException()
+androidx.compose.ui.text.input.CursorAnchorInfoApi33Helper: android.view.inputmethod.CursorAnchorInfo$Builder setEditorBoundsInfo(android.view.inputmethod.CursorAnchorInfo$Builder,androidx.compose.ui.geometry.Rect)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: android.view.ViewStructure newVirtualViewStructure(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,long)
+kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow[] values()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: androidx.core.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat buildCollectionItemInfoCompat(boolean,int,int,int,int,boolean,java.lang.String,java.lang.String)
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState valueOf(java.lang.String)
+com.pakertong.snooker.viewmodel.GameViewModel: boolean calculateColorPhase()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.compose.material3.ScaffoldLayoutContent: androidx.compose.material3.ScaffoldLayoutContent valueOf(java.lang.String)
+com.pakertong.snooker.model.MatchRecord: java.util.List getPlayers()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityStopped(android.app.Activity)
+androidx.compose.ui.window.PopupLayout: void setParentLayoutDirection(androidx.compose.ui.unit.LayoutDirection)
+com.pakertong.snooker.model.Player: java.util.List access$getPlayerColors$cp()
+androidx.core.app.NotificationManagerCompat$Api24Impl: boolean areNotificationsEnabled(android.app.NotificationManager)
+androidx.activity.ComponentActivity: void addOnNewIntentListener(androidx.core.util.Consumer)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostResumed(android.app.Activity)
+androidx.compose.ui.window.PopupLayout: android.view.View getViewRoot()
+com.pakertong.snooker.viewmodel.GameViewModel: boolean getShowReSpotDialog()
+androidx.compose.ui.platform.AndroidComposeView: void setLayoutDirection(androidx.compose.ui.unit.LayoutDirection)
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$Api29Impl: void addPageActions(androidx.core.view.accessibility.AccessibilityNodeInfoCompat,androidx.compose.ui.semantics.SemanticsNode)
+androidx.activity.ComponentActivity: void onPictureInPictureModeChanged(boolean)
+com.pakertong.snooker.viewmodel.GameViewModel: void setCurrentPlayerIdx(int)
+androidx.activity.ComponentActivity: void onSaveInstanceState(android.os.Bundle)
+androidx.compose.ui.autofill.AutofillApi23Helper: void setId(android.view.ViewStructure,int,java.lang.String,java.lang.String,java.lang.String)
+com.pakertong.snooker.model.GameStore: com.pakertong.snooker.model.MatchRecord parseMatch(org.json.JSONObject)
+androidx.core.app.ComponentActivity: boolean dispatchKeyShortcutEvent(android.view.KeyEvent)
+com.pakertong.snooker.viewmodel.GameViewModel: void setCurrentTab(int)
+androidx.compose.foundation.gestures.Orientation: androidx.compose.foundation.gestures.Orientation valueOf(java.lang.String)
+androidx.compose.material.DismissValue: androidx.compose.material.DismissValue[] values()
+androidx.profileinstaller.ProfileInstallReceiver: ProfileInstallReceiver()
+androidx.compose.ui.platform.CalculateMatrixToWindowApi29: void calculateMatrixToWindow-EL8BTi8(android.view.View,float[])
+com.pakertong.snooker.model.GameStore: void load()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPrePaused(android.app.Activity)
+com.pakertong.snooker.viewmodel.GameViewModel: boolean isScoresTied()
+androidx.activity.ComponentActivity: androidx.savedstate.SavedStateRegistry getSavedStateRegistry()
+androidx.core.view.ViewCompat$Api21Impl: boolean isImportantForAccessibility(android.view.View)
+androidx.compose.ui.autofill.AutofillCallback: void unregister(androidx.compose.ui.autofill.AndroidAutofill)
+com.pakertong.snooker.model.UndoAction$Score: int component3()
+com.pakertong.snooker.model.MatchRecord: long component3()
+androidx.core.view.ViewCompat$Api28Impl: void removeOnUnhandledKeyEventListener(android.view.View,androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerCompat)
+androidx.activity.OnBackPressedDispatcher$Api33Impl: void registerOnBackInvokedCallback(java.lang.Object,int,java.lang.Object)
+androidx.lifecycle.ViewModel: void clear()
+kotlinx.coroutines.flow.internal.ChildCancelledException: ChildCancelledException()
+androidx.lifecycle.ProcessLifecycleInitializer: ProcessLifecycleInitializer()
+com.pakertong.snooker.model.UndoAction$Score: com.pakertong.snooker.model.UndoAction$Score copy$default(com.pakertong.snooker.model.UndoAction$Score,int,int,int,com.pakertong.snooker.model.EndGameSnapshot,int,java.lang.Object)
+com.pakertong.snooker.model.UndoAction$Miss: UndoAction$Miss(com.pakertong.snooker.model.EndGameSnapshot)
+androidx.compose.animation.core.AnimationEndReason: androidx.compose.animation.core.AnimationEndReason[] values()
+androidx.core.os.BundleApi21ImplKt: void putSize(android.os.Bundle,java.lang.String,android.util.Size)
+androidx.activity.ComponentActivity: void addOnPictureInPictureModeChangedListener(androidx.core.util.Consumer)
+androidx.compose.foundation.layout.LayoutOrientation: androidx.compose.foundation.layout.LayoutOrientation valueOf(java.lang.String)
+android.support.v4.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+androidx.core.view.WindowInsetsCompat$Impl: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+androidx.activity.ComponentActivity: void access$001(androidx.activity.ComponentActivity)
+com.pakertong.snooker.model.PlayerSnapshot: int component2()
+androidx.compose.ui.platform.AndroidComposeViewTranslationCallbackS: void setViewTranslationCallback(android.view.View,android.view.translation.ViewTranslationCallback)
+androidx.core.view.WindowInsetsCompat$Impl: void setOverriddenInsets(androidx.core.graphics.Insets[])
+androidx.lifecycle.ViewModel: java.lang.Object getTag(java.lang.String)
+androidx.activity.ComponentActivity: void onPanelClosed(int,android.view.Menu)
+com.pakertong.snooker.model.EndGameSnapshot: boolean equals(java.lang.Object)
+androidx.core.view.ViewCompat$Api21Impl: void setTranslationZ(android.view.View,float)
+androidx.compose.ui.platform.TextToolbarHelperMethods: android.view.ActionMode startActionMode(android.view.View,android.view.ActionMode$Callback,int)
+com.pakertong.snooker.model.AppLanguage: kotlin.enums.EnumEntries getEntries()
+com.pakertong.snooker.model.PlayerSnapshot: int getHighestBreak()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+androidx.compose.ui.platform.coreshims.ViewCompatShims$Api29Impl: android.view.contentcapture.ContentCaptureSession getContentCaptureSession(android.view.View)
+com.pakertong.snooker.model.EndGameSnapshot: java.lang.String toString()
+androidx.compose.ui.node.LayoutNode$LayoutState: androidx.compose.ui.node.LayoutNode$LayoutState valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: androidx.core.view.WindowInsetsCompat build()
+kotlinx.coroutines.android.AndroidExceptionPreHandler: void handleException(kotlin.coroutines.CoroutineContext,java.lang.Throwable)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+com.pakertong.snooker.model.GameStore$load$$inlined$sortByDescending$1: int compare(java.lang.Object,java.lang.Object)
+com.pakertong.snooker.model.UndoAction$Miss: com.pakertong.snooker.model.EndGameSnapshot getSnapshot()
+androidx.core.view.DisplayCutoutCompat$Api28Impl: int getSafeInsetLeft(android.view.DisplayCutout)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: java.lang.CharSequence getContainerTitle(android.view.accessibility.AccessibilityNodeInfo)
+androidx.compose.foundation.layout.LayoutOrientation: androidx.compose.foundation.layout.LayoutOrientation[] values()
+com.pakertong.snooker.model.MatchRecord: MatchRecord(java.lang.String,long,long,java.util.List,java.lang.String,java.util.List,java.lang.String)
+com.pakertong.snooker.model.LocalizationManager: com.pakertong.snooker.model.AppLanguage detectSystemLanguage()
+androidx.core.view.WindowCompat$Api30Impl: void setDecorFitsSystemWindows(android.view.Window,boolean)
+com.pakertong.snooker.model.ScoreEvent: int hashCode()
+com.pakertong.snooker.model.SnookerBall: SnookerBall(java.lang.String,int,int,long)
+com.pakertong.snooker.viewmodel.GameViewModel: void nextTurn()
+androidx.activity.Api34Impl: int swipeEdge(android.window.BackEvent)
+androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)
+androidx.core.app.ComponentActivity: ComponentActivity()
+androidx.compose.ui.platform.AndroidComposeView: void getShowLayoutBounds$annotations()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStopped(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl: boolean isVisible(int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setTappableElementInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.platform.ComposeView: void getShouldCreateCompositionOnAttachedToWindow$annotations()
+androidx.compose.ui.text.platform.Api28Impl: android.text.style.TypefaceSpan createTypefaceSpan(android.graphics.Typeface)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void registerIn(android.app.Activity)
+com.pakertong.snooker.viewmodel.GameViewModel: void setupPlayers(java.util.List,int)
+androidx.compose.foundation.text.selection.CrossStatus: androidx.compose.foundation.text.selection.CrossStatus valueOf(java.lang.String)
+com.pakertong.snooker.model.LocalizationManager: com.pakertong.snooker.model.AppLanguage getCurrentLanguage()
+com.pakertong.snooker.model.AppLanguage: com.pakertong.snooker.model.AppLanguage[] $values()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api30Impl: void setStateDescription(android.view.accessibility.AccessibilityNodeInfo,java.lang.CharSequence)
+com.pakertong.snooker.model.UndoAction$Foul: java.lang.String toString()
+androidx.core.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setStableInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int)
+androidx.activity.ComponentActivity: void invalidateMenu()
+kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow valueOf(java.lang.String)
+com.pakertong.snooker.model.UndoAction$Foul: int getPoints()
+androidx.compose.animation.core.AnimationEndReason: androidx.compose.animation.core.AnimationEndReason valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsForType(int,boolean)
+com.pakertong.snooker.model.Player: void setScore(int)
+com.pakertong.snooker.model.PlayerSnapshot: int component4()
+androidx.compose.ui.window.PopupLayout: java.lang.String getTestTag()
+com.pakertong.snooker.viewmodel.GameViewModel: void clearRecentScore()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.WindowInfo getWindowInfo()
+androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand: androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand[] values()
+androidx.compose.ui.graphics.BlendModeColorFilterHelper: androidx.compose.ui.graphics.BlendModeColorFilter createBlendModeColorFilter(android.graphics.BlendModeColorFilter)
+androidx.core.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.activity.ComponentActivity: androidx.activity.result.ActivityResultRegistry getActivityResultRegistry()
+com.pakertong.snooker.viewmodel.GameViewModel: long getTurnStartTime()
+androidx.compose.ui.platform.AbstractComposeView: boolean getHasComposition()
+com.pakertong.snooker.model.UndoAction$Foul: int getPlayerIdx()
+com.pakertong.snooker.model.ScoreEvent: java.lang.String component2()
+androidx.core.view.DisplayCutoutCompat$Api30Impl: android.view.DisplayCutout createDisplayCutout(android.graphics.Insets,android.graphics.Rect,android.graphics.Rect,android.graphics.Rect,android.graphics.Rect,android.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30()
+com.pakertong.snooker.model.PlayerSnapshot: PlayerSnapshot(java.lang.String,int,int,int)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+androidx.core.view.ViewCompat$Api16Impl: android.view.ViewParent getParentForAccessibility(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.compose.ui.graphics.ColorSpaceVerificationHelper: androidx.compose.ui.graphics.colorspace.ColorSpace composeColorSpace(android.graphics.ColorSpace)
+com.pakertong.snooker.model.UndoAction$Miss: java.lang.String toString()
+androidx.compose.ui.text.android.BoringLayoutFactoryDefault: android.text.BoringLayout create(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout$Alignment,float,float,android.text.BoringLayout$Metrics,boolean,android.text.TextUtils$TruncateAt,int)
+com.pakertong.snooker.model.EndGameSnapshot: java.util.Set component6()
+androidx.compose.ui.text.platform.extensions.LocaleListHelperMethods: java.lang.Object localeSpan(androidx.compose.ui.text.intl.LocaleList)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostStarted(android.app.Activity)
+androidx.compose.ui.window.PopupLayout: boolean getShouldCreateCompositionOnAttachedToWindow()
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax[] values()
+kotlinx.coroutines.android.AndroidDispatcherFactory: AndroidDispatcherFactory()
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: android.view.autofill.AutofillId newAutofillId(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,long)
+com.pakertong.snooker.model.UndoAction$Foul: int component3()
+com.pakertong.snooker.model.EndGameSnapshot: int component3()
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax valueOf(java.lang.String)
+com.pakertong.snooker.model.EndGameSnapshot: com.pakertong.snooker.model.EndGameSnapshot copy(int,boolean,int,boolean,int,java.util.Set)
+androidx.core.graphics.TypefaceCompatUtil$Api19Impl: android.os.ParcelFileDescriptor openFileDescriptor(android.content.ContentResolver,android.net.Uri,java.lang.String,android.os.CancellationSignal)
+androidx.compose.ui.graphics.BlendModeColorFilterHelper: android.graphics.BlendModeColorFilter BlendModeColorFilter-xETnrds(long,int)
+androidx.compose.ui.platform.AndroidViewsHandler: java.util.HashMap getHolderToLayoutNode()
+androidx.lifecycle.SavedStateHandlesVM: java.util.Map getHandles()
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api34Impl: void notifyViewsAppeared(android.view.contentcapture.ContentCaptureSession,java.util.List)
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.ViewCompat$Api21Impl: void setOnApplyWindowInsetsListener(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+com.pakertong.snooker.model.UndoAction$Score: java.lang.String toString()
+androidx.compose.material.ripple.UnprojectedRipple$MRadiusHelper: void setRadius(android.graphics.drawable.RippleDrawable,int)
+androidx.compose.foundation.layout.SizeMode: androidx.compose.foundation.layout.SizeMode valueOf(java.lang.String)
+com.pakertong.snooker.model.UndoAction$Foul: boolean equals(java.lang.Object)
+androidx.core.view.ViewConfigurationCompat$Api26Impl: float getScaledHorizontalScrollFactor(android.view.ViewConfiguration)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.LayoutNodeDrawScope getSharedDrawScope()
+androidx.activity.ComponentActivity: void removeOnMultiWindowModeChangedListener(androidx.core.util.Consumer)
+androidx.compose.foundation.text.selection.SelectionHandleAnchor: androidx.compose.foundation.text.selection.SelectionHandleAnchor valueOf(java.lang.String)
+androidx.core.app.ComponentActivity: void onSaveInstanceState(android.os.Bundle)
+androidx.compose.ui.text.font.TypefaceHelperMethodsApi28: android.graphics.Typeface create(android.graphics.Typeface,int,boolean)
+androidx.core.view.ViewCompat$Api28Impl: void setScreenReaderFocusable(android.view.View,boolean)
+androidx.core.view.WindowInsetsCompat$Impl28: boolean equals(java.lang.Object)
+com.pakertong.snooker.model.ScoreEvent: long component5()
+androidx.core.view.ViewCompat$Api16Impl: void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand: androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand valueOf(java.lang.String)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+com.pakertong.snooker.model.Player: boolean equals(java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.unit.Density getDensity()
+androidx.activity.Api34Impl: float touchX(android.window.BackEvent)
+android.support.v4.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.compose.ui.platform.coreshims.ViewCompatShims$Api30Impl: void setImportantForContentCapture(android.view.View,int)
+androidx.compose.ui.platform.AndroidComposeView: void getFontLoader$annotations()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.activity.ComponentActivity: boolean onCreatePanelMenu(int,android.view.Menu)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityPaused(android.app.Activity)
+androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy: androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy valueOf(java.lang.String)
+androidx.activity.ComponentActivity: void lambda$new$2(android.content.Context)
+com.pakertong.snooker.model.UndoAction$Miss: boolean equals(java.lang.Object)
+com.pakertong.snooker.model.MatchRecord: MatchRecord()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: androidx.core.view.accessibility.AccessibilityNodeInfoCompat getParent(android.view.accessibility.AccessibilityNodeInfo,int)
+androidx.activity.ComponentActivity: void onTrimMemory(int)
+com.pakertong.snooker.model.UndoAction$Miss: com.pakertong.snooker.model.UndoAction$Miss copy(com.pakertong.snooker.model.EndGameSnapshot)
+androidx.compose.ui.text.android.StaticLayoutFactory33: void setLineBreakConfig(android.text.StaticLayout$Builder,int,int)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStarted(android.app.Activity)
+com.pakertong.snooker.viewmodel.GameViewModel: com.pakertong.snooker.model.Player getCurrentPlayer()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+androidx.compose.ui.autofill.AutofillApi26Helper: void setAutofillType(android.view.ViewStructure,int)
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight[] values()
+androidx.core.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.activity.ComponentActivity: void startIntentSenderForResult(android.content.IntentSender,int,android.content.Intent,int,int,int)
+androidx.emoji2.text.EmojiCompatInitializer: EmojiCompatInitializer()
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setTextStyle(android.view.ViewStructure,float,int,int,int)
+com.pakertong.snooker.model.UndoAction$Score: int getPoints()
+androidx.activity.ComponentActivity: androidx.activity.result.ActivityResultLauncher registerForActivityResult(androidx.activity.result.contract.ActivityResultContract,androidx.activity.result.ActivityResultRegistry,androidx.activity.result.ActivityResultCallback)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.font.Font$ResourceLoader getFontLoader()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostResumed(android.app.Activity)
+com.pakertong.snooker.viewmodel.GameViewModel: boolean isColorPhase()
+androidx.compose.ui.platform.AndroidComposeView: android.view.View getView()
+androidx.compose.foundation.layout.Direction: androidx.compose.foundation.layout.Direction valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api16Impl: android.view.accessibility.AccessibilityNodeProvider getAccessibilityNodeProvider(android.view.View)
+androidx.compose.ui.window.SecureFlagPolicy: androidx.compose.ui.window.SecureFlagPolicy[] values()
+androidx.core.view.ViewCompat$Api30Impl: java.lang.CharSequence getStateDescription(android.view.View)
+androidx.activity.ComponentActivity: kotlin.Unit lambda$new$0()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.unit.LayoutDirection getLayoutDirection()
+androidx.compose.animation.core.MutatePriority: androidx.compose.animation.core.MutatePriority[] values()
+androidx.core.text.TextUtilsCompat$Api17Impl: int getLayoutDirectionFromLocale(java.util.Locale)
+androidx.compose.ui.window.PopupLayout: void setSecurePolicy(androidx.compose.ui.window.SecureFlagPolicy)
+androidx.core.view.ViewCompat$Api30Impl: void setStateDescription(android.view.View,java.lang.CharSequence)
+androidx.core.app.RemoteActionCompat: RemoteActionCompat()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setBoundsInWindow(android.view.accessibility.AccessibilityNodeInfo,android.graphics.Rect)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setAccessibilityDataSensitive(android.view.accessibility.AccessibilityNodeInfo,boolean)
+kotlinx.coroutines.flow.SharingCommand: kotlinx.coroutines.flow.SharingCommand[] values()
+com.pakertong.snooker.model.PlayerSnapshot: java.lang.String component1()
+kotlin.collections.AbstractList: AbstractList()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.font.FontFamily$Resolver getFontFamilyResolver()
+androidx.activity.ComponentActivity: ComponentActivity()
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedPreScroll(android.view.View,int,int,int[],int[])
+com.pakertong.snooker.model.Player: java.lang.String toString()
+androidx.core.view.ViewCompat$Api21Impl: void callCompatInsetAnimationCallback(android.view.WindowInsets,android.view.View)
+androidx.activity.ComponentActivity: void addOnConfigurationChangedListener(androidx.core.util.Consumer)
+androidx.activity.ComponentActivity: void addContentView(android.view.View,android.view.ViewGroup$LayoutParams)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl(androidx.core.view.WindowInsetsCompat)
+com.pakertong.snooker.model.EndGameSnapshot: int getRedOffset()
+com.pakertong.snooker.viewmodel.GameViewModel: long getMatchStartTime()
+androidx.core.view.DisplayCutoutCompat$Api28Impl: java.util.List getBoundingRects(android.view.DisplayCutout)
+androidx.core.os.TraceCompat$Api18Impl: void endSection()
+com.pakertong.snooker.model.GameStore: org.json.JSONObject toJson(com.pakertong.snooker.model.MatchRecord)
+androidx.compose.material.DismissDirection: androidx.compose.material.DismissDirection[] values()
+com.pakertong.snooker.viewmodel.GameViewModel: com.pakertong.snooker.model.EndGameSnapshot captureSnapshot()
+androidx.activity.ComponentActivity: void addOnTrimMemoryListener(androidx.core.util.Consumer)
+com.pakertong.snooker.model.SnookerBall: com.pakertong.snooker.model.SnookerBall[] values()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostCreated(android.app.Activity,android.os.Bundle)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPreCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$ViewTranslationHelperMethodsS: void onCreateVirtualViewTranslationRequests(androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat,long[],int[],java.util.function.Consumer)
+androidx.compose.ui.layout.IntrinsicMinMax: androidx.compose.ui.layout.IntrinsicMinMax valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api21Impl$1: ViewCompat$Api21Impl$1(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+androidx.lifecycle.AndroidViewModel: AndroidViewModel(android.app.Application)
+com.pakertong.snooker.model.GameStore: java.util.List getAllMatches()
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State[] values()
+androidx.compose.ui.platform.AndroidComposeView: void setConfigurationChangeObserver(kotlin.jvm.functions.Function1)
+com.pakertong.snooker.model.Player: int getColorIndex()
+androidx.core.view.ViewCompat$Api16Impl: void requestFitSystemWindows(android.view.View)
+androidx.compose.ui.layout.IntrinsicWidthHeight: androidx.compose.ui.layout.IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.activity.ComponentActivity: void removeOnNewIntentListener(androidx.core.util.Consumer)
+androidx.core.view.ViewCompat$Api21Impl: void stopNestedScroll(android.view.View)
+androidx.compose.ui.graphics.Api26Bitmap: androidx.compose.ui.graphics.colorspace.ColorSpace composeColorSpace$ui_graphics_release(android.graphics.Bitmap)
+androidx.compose.ui.text.style.ResolvedTextDirection: androidx.compose.ui.text.style.ResolvedTextDirection[] values()
+com.pakertong.snooker.model.UndoAction$Score: com.pakertong.snooker.model.EndGameSnapshot component4()
+com.pakertong.snooker.model.GameStore: GameStore(android.content.Context)
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] values()
+androidx.core.graphics.PaintCompat$Api23Impl: boolean hasGlyph(android.graphics.Paint,java.lang.String)
+com.pakertong.snooker.model.Player: int component6()
+androidx.compose.material3.InputPhase: androidx.compose.material3.InputPhase valueOf(java.lang.String)
+androidx.core.graphics.drawable.IconCompat$Api23Impl: android.graphics.drawable.Icon toIcon(androidx.core.graphics.drawable.IconCompat,android.content.Context)
+androidx.core.view.ViewCompat$Api21Impl: android.content.res.ColorStateList getBackgroundTintList(android.view.View)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.RootForTest getRootForTest()
+androidx.compose.ui.window.PopupLayout: void setTestTag(java.lang.String)
+com.pakertong.snooker.viewmodel.GameViewModel: void foul$default(com.pakertong.snooker.viewmodel.GameViewModel,int,int,boolean,int,java.lang.Object)
+com.pakertong.snooker.viewmodel.GameViewModel: java.util.List getSortedPlayers()
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: void setAmbientShadowColor(android.view.RenderNode,int)
+androidx.compose.ui.text.android.BoringLayoutFactory33: android.text.BoringLayout create(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout$Alignment,float,float,android.text.BoringLayout$Metrics,boolean,boolean,android.text.TextUtils$TruncateAt,int)
+androidx.core.view.ViewCompat$Api19Impl: void setAccessibilityLiveRegion(android.view.View,int)
+androidx.activity.ComponentActivity: void setContentView(int)
+com.pakertong.snooker.model.ScoreEvent: java.lang.String getPlayerName()
+androidx.compose.ui.text.android.Paint29: void getTextBounds(android.graphics.Paint,java.lang.CharSequence,int,int,android.graphics.Rect)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootViewData(androidx.core.graphics.Insets)
+androidx.compose.material3.tokens.ShapeKeyTokens: androidx.compose.material3.tokens.ShapeKeyTokens valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: boolean isConsumed()
+com.pakertong.snooker.model.MatchRecord: java.lang.String toString()
+com.pakertong.snooker.model.MatchRecord: long getDate()
+androidx.compose.ui.platform.AndroidComposeView: boolean getShowLayoutBounds()
+androidx.core.view.WindowInsetsCompat$Impl30: boolean isVisible(int)
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State valueOf(java.lang.String)
+com.pakertong.snooker.viewmodel.GameViewModel: androidx.compose.runtime.snapshots.SnapshotStateList getEvents()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setQueryFromAppProcessEnabled(android.view.accessibility.AccessibilityNodeInfo,android.view.View,boolean)
+com.pakertong.snooker.model.EndGameSnapshot: com.pakertong.snooker.model.EndGameSnapshot copy$default(com.pakertong.snooker.model.EndGameSnapshot,int,boolean,int,boolean,int,java.util.Set,int,java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidViewsHandler getAndroidViewsHandler$ui_release()
+androidx.compose.foundation.gestures.Orientation: androidx.compose.foundation.gestures.Orientation[] values()
+androidx.activity.ComponentActivity: void onActivityResult(int,int,android.content.Intent)
+androidx.compose.material3.TabSlots: androidx.compose.material3.TabSlots[] values()
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api16Impl: boolean getFitsSystemWindows(android.view.View)
+androidx.compose.ui.node.LayoutNode$LayoutState: androidx.compose.ui.node.LayoutNode$LayoutState[] values()
+androidx.compose.ui.autofill.AutofillApi23Helper: void setDimens(android.view.ViewStructure,int,int,int,int,int,int)
+com.pakertong.snooker.model.Player: int getHighestBreak()
+com.pakertong.snooker.model.EndGameSnapshot: boolean isColorPhase()
+com.pakertong.snooker.model.LocalizationManager: LocalizationManager()
+com.pakertong.snooker.model.GameStore$delete$1: java.lang.Object invoke(java.lang.Object)
+com.pakertong.snooker.model.AppLanguage: com.pakertong.snooker.model.AppLanguage valueOf(java.lang.String)
+com.pakertong.snooker.viewmodel.GameViewModel: void setFreeBallToggle(boolean)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPaused(android.app.Activity)
+androidx.activity.ComponentActivity: void startIntentSenderForResult(android.content.IntentSender,int,android.content.Intent,int,int,int,android.os.Bundle)
+androidx.emoji2.text.ConcurrencyHelpers$Handler28Impl: android.os.Handler createAsync(android.os.Looper)
+androidx.compose.material3.tokens.ColorSchemeKeyTokens: androidx.compose.material3.tokens.ColorSchemeKeyTokens[] values()
+androidx.core.view.ViewCompat$Api21Impl: float getZ(android.view.View)
+androidx.compose.ui.focus.CustomDestinationResult: androidx.compose.ui.focus.CustomDestinationResult valueOf(java.lang.String)
+androidx.core.view.DisplayCutoutCompat$Api28Impl: int getSafeInsetBottom(android.view.DisplayCutout)
+androidx.core.os.BundleApi18ImplKt: void putBinder(android.os.Bundle,java.lang.String,android.os.IBinder)
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedPreFling(android.view.View,float,float)
+androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: androidx.core.view.WindowInsetsCompat build()
+androidx.core.graphics.drawable.IconCompat$Api30Impl: android.graphics.drawable.Icon createWithAdaptiveBitmapContentUri(android.net.Uri)
+com.pakertong.snooker.model.UndoAction: UndoAction(kotlin.jvm.internal.DefaultConstructorMarker)
+androidx.core.view.ViewCompat$Api16Impl: int getWindowSystemUiVisibility(android.view.View)
+androidx.core.view.ViewCompat$Api16Impl: int getImportantForAccessibility(android.view.View)
+androidx.core.content.res.FontResourcesParserCompat$Api21Impl: int getType(android.content.res.TypedArray,int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void applyInsetTypes()
+androidx.core.view.ViewCompat$Api29Impl: android.view.View$AccessibilityDelegate getAccessibilityDelegate(android.view.View)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: java.lang.String getCollectionItemColumnTitle(java.lang.Object)
+androidx.core.view.ViewCompat$Api21Impl: boolean isNestedScrollingEnabled(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl30: void copyRootViewBounds(android.view.View)
